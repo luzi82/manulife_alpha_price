@@ -1,14 +1,11 @@
 import urllib.request
 import os
 import shutil
+import urllib.parse
+import requests
 
-def http_get(url):
-    with urllib.request.urlopen(url) as f:
-        return f.read()
-
-def download(url, output):
-    data = http_get(url)
-    with open(output,'wb') as fout:
+def write(data, fn):
+    with open(fn,'wb') as fout:
         fout.write(data)
 
 def makedirs(path):

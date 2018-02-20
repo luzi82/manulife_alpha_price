@@ -1,14 +1,27 @@
 from mil_alpha_price import common
 from . import HOME_URL
-from . import alpha
+from . import alpha, qcp
 import os
+import requests
 
 if __name__ == '__main__':
     DIR=os.path.join(os.path.dirname(__file__),'references')
     
     common.reset_dir(DIR)
 
-    common.download(HOME_URL,os.path.join(DIR,'home.txt'))
+    cookies = requests.cookies.RequestsCookieJar()
+
+    r = requests.get(HOME_URL, cookies=cookies)
+    cookies.update(r.cookies)
+    common.write(r.content, os.path.join(DIR,'home.txt'))
+    alpha_url = alpha.parse_alpha_url(r)
     
-    alpha_url = alpha.get_alpha_url(HOME_URL)
-    common.download(alpha_url,os.path.join(DIR,'alpha.txt'))
+    r = requests.get(alpha_url, cookies=cookies)
+    cookies.update(r.cookies)
+    common.write(r.content, os.path.join(DIR,'alpha.txt'))
+    qcp_form = qcp.parse_qcp_form(r)
+
+    print(cookies)
+
+    r = requests.post(qcp_form['url'], data=qcp_form['data'], headers=qcp_form['headers'], cookies=cookies)
+    common.write(r.content, os.path.join(DIR,'qcp.txt'))

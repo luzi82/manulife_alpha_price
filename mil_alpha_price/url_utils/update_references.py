@@ -4,10 +4,10 @@ from . import alpha
 import os
 
 if __name__ == '__main__':
-    DIR=os.path.join('references','url_utils')
-
-    common.reset_dir(DIR)
+    DIR=os.path.join(os.path.dirname(__file__),'references')
     
+    common.reset_dir(DIR)
+
     common.download(HOME_URL,os.path.join(DIR,'home.txt'))
     
     alpha_url = alpha.get_alpha_url(HOME_URL)

@@ -1,8 +1,7 @@
 import urllib.parse
 from html.parser import HTMLParser
 import mil_alpha_price.common as common
-
-HOME_URL='https://www.manulife.com.hk/wps/portal/pwshome/dfp'
+from . import HOME_URL
 
 def get_alpha_url(home_url):
     content = common.http_get(home_url).decode('utf-8')

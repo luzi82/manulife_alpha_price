@@ -1,16 +1,14 @@
 import urllib.parse
 from html.parser import HTMLParser
 import mil_alpha_price.common as common
-from . import HOME_URL
 
-def get_alpha_url(home_url):
-    content = common.http_get(home_url).decode('utf-8')
+def parse_alpha_url(r):
     hp = _HP()
-    hp.feed(content)
+    hp.feed(r.text)
     url_list = hp.url_list
     assert(len(url_list)==1)
     url = url_list[0]
-    url = urllib.parse.urljoin(home_url, url)
+    url = urllib.parse.urljoin(r.url, url)
     return url
 
 class _HP(HTMLParser):
@@ -36,4 +34,10 @@ class _HP(HTMLParser):
         self.url_list.append(self.tmp_url)
 
 if __name__ == '__main__':
-    print(get_alpha_url(HOME_URL))
+    from . import HOME_URL
+    import requests
+    
+    cj = requests.cookies.RequestsCookieJar()
+    
+    r = requests.get(HOME_URL)
+    print(parse_alpha_url(r))

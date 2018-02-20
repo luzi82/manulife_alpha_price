@@ -39,5 +39,5 @@ if __name__ == '__main__':
     
     cj = requests.cookies.RequestsCookieJar()
     
-    r = requests.get(HOME_URL)
+    r = requests.get(HOME_URL, cookies=cj)
     print(parse_alpha_url(r))

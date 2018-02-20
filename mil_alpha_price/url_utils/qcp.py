@@ -1,17 +1,39 @@
 import urllib.parse
 from html.parser import HTMLParser
 import mil_alpha_price.common as common
-from . import HOME_URL
-from . import alpha
 
-def get_qcp_form(alpha_url):
-    content = common.http_get(alpha_url).decode('utf-8')
+def parse_qcp_form(r):
+    content = r.text
 
     hp = _HP()
     hp.feed(content)
     assert(hp.form is not None)
+    form = hp.form
 
-    return hp.form
+    url = form['attr_dict']['action']
+    url = urllib.parse.urljoin(r.url, url)
+    
+    data = {}
+    for attr_dict in form['input_attr_dict_list']:
+        if 'name' not in attr_dict:
+            continue
+        if 'value' in attr_dict:
+            value = attr_dict['value']
+        elif ('type' in attr_dict) and (attr_dict['type']=='submit'):
+            value = 'Submit'
+        else:
+            value = ''
+        name = attr_dict['name']
+        data[name] = value
+        
+    headers = {}
+    headers['Referer'] = r.url
+
+    return {
+        'url':url,
+        'data':data,
+        'headers':headers,
+    }
 
 def attrs_to_dict(attrs):
     return {k:v for k,v in attrs}
@@ -44,9 +66,17 @@ class _HP(HTMLParser):
 
 if __name__ == '__main__':
     from . import HOME_URL
+    from . import alpha
 
-    alpha_url = alpha.get_alpha_url(HOME_URL)
+    import requests
     
-    qcp_form = get_qcp_form(alpha_url)
+    cookies = requests.cookies.RequestsCookieJar()
+    
+    r = requests.get(HOME_URL, cookies=cookies)
+    alpha_url = alpha.parse_alpha_url(r)
+
+    r = requests.get(alpha_url, cookies=cookies)
+    qcp_form = parse_qcp_form(r)
     
     print(qcp_form)
+    

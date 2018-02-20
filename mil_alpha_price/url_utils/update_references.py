@@ -11,4 +11,4 @@ if __name__ == '__main__':
     common.download(HOME_URL,os.path.join(DIR,'home.txt'))
     
     alpha_url = alpha.get_alpha_url(HOME_URL)
-    common.download(HOME_URL,os.path.join(DIR,'alpha.txt'))
+    common.download(alpha_url,os.path.join(DIR,'alpha.txt'))

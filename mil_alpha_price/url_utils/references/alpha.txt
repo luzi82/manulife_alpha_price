@@ -1,0 +1,2956 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- rel=dynamic-content indicates an element that is replaced with the contents produced by the specified href. 
+	 dyn-cs:* URIs are resolved using the WP DynamicContentSpotMappings resource environment provider. These values can
+	 also be set using theme metadata if a theme is specified in the URI (e.g. @tl:oid:theme_unique_name). -->
+<link rel="stylesheet" href="/wps/contenthandler/!ut/p/digest!ZAN8glVgXq3D62NtLnYvdQ/sp/mashup:ra:collection?soffset=0&amp;eoffset=6&amp;themeID=ZJ_NAK01440J08210A0A0MNUP2027&amp;locale=en&amp;mime-type=text%2Fcss&amp;entry=wp_one_ui_30__0.0%3Ahead_css&amp;entry=wp_one_ui_dijit_30__0.0%3Ahead_css&amp;entry=wp_preview__0.0%3Ahead_css&amp;entry=wp_legacy_layouts__0.0%3Ahead_css&amp;entry=wp_project_menu__0.0%3Ahead_css&amp;entry=wp_theme_portal_80__0.0%3Ahead_css&amp;entry=wp_status_bar__0.0%3Ahead_css&amp;entry=wp_portlet_css__0.0%3Ahead_css" type="text/css"/><link rel="stylesheet" href="/wps/contenthandler/!ut/p/digest!ZAN8glVgXq3D62NtLnYvdQ/sp/mashup:ra:collection?soffset=6&amp;eoffset=15&amp;themeID=ZJ_NAK01440J08210A0A0MNUP2027&amp;locale=en&amp;mime-type=text%2Fcss&amp;entry=wp_one_ui_30__0.0%3Ahead_css&amp;entry=wp_one_ui_dijit_30__0.0%3Ahead_css&amp;entry=wp_preview__0.0%3Ahead_css&amp;entry=wp_legacy_layouts__0.0%3Ahead_css&amp;entry=wp_project_menu__0.0%3Ahead_css&amp;entry=wp_theme_portal_80__0.0%3Ahead_css&amp;entry=wp_status_bar__0.0%3Ahead_css&amp;entry=wp_portlet_css__0.0%3Ahead_css" type="text/css"/><link rel="alternate" id="head_css_deferred" href="/wps/contenthandler/!ut/p/digest!ZAN8glVgXq3D62NtLnYvdQ/sp/mashup:ra:collection?soffset=0&amp;eoffset=14&amp;themeID=ZJ_NAK01440J08210A0A0MNUP2027&amp;locale=en&amp;mime-type=text%2Fcss&amp;entry=wp_tagging_rating__0.0%3Ahead_css&amp;entry=wp_content_mapping_picker__0.0%3Ahead_css&amp;entry=wp_federated_documents_picker__0.0%3Ahead_css&amp;entry=mm_builder_dialogs__0.0%3Ahead_css&amp;entry=mm_page_sharing_base__0.0%3Ahead_css&amp;entry=wp_pagebuilder_dnd__0.0%3Ahead_css&amp;entry=mm_move_page__0.0%3Ahead_css&amp;entry=wp_analytics__0.0%3Ahead_css&amp;entry=wp_toolbar__0.0%3Ahead_css&amp;entry=mm_builder_wiring__0.0%3Ahead_css&amp;deferred=true"/><script type="text/javascript">var djConfig={"baseUrl":"/wps/portal_dojo/v1.7/dojo/","locale":"en","isDebug":false,"debugAtAllCosts":false,"parseOnLoad":false,"afterOnLoad":false,"modulePaths":{"com":"/wps/themeModules/js/com","ibm":"/wps/themeModules/js/ibm"}};djConfig.locale=djConfig.locale.replace(/_/g, "-").replace(/iw/, "he").toLowerCase();</script><script type="text/javascript" src="/wps/contenthandler/!ut/p/digest!1H8SvJf47T1Enlak08Y1cQ/mashup/ra:collection?themeID=ZJ_NAK01440J08210A0A0MNUP2027&amp;locale=en&amp;mime-type=text%2Fplain&amp;entry=wp_client_main__0.0%3Ahead_js&amp;entry=wp_client_ext__0.0%3Ahead_js&amp;entry=wp_analytics_aggregator__0.0%3Ahead_js&amp;entry=wp_theme_portal_80__0.0%3Ahead_js"></script><link rel="alternate" id="head_js_deferred" href="/wps/contenthandler/!ut/p/digest!ZAN8glVgXq3D62NtLnYvdQ/mashup/ra:collection?themeID=ZJ_NAK01440J08210A0A0MNUP2027&amp;locale=en&amp;mime-type=text%2Fplain&amp;entry=dojo_17__0.0%3Ahead_js&amp;entry=dojo_fx_17__0.0%3Ahead_js&amp;entry=dojo_fmt_17__0.0%3Ahead_js&amp;entry=dojo_dom_17__0.0%3Ahead_js&amp;entry=dojo_app_17__0.0%3Ahead_js&amp;entry=dijit_17__0.0%3Ahead_js&amp;entry=dojo_dnd_basic_17__0.0%3Ahead_js&amp;entry=dojo_dnd_ext_17__0.0%3Ahead_js&amp;entry=dijit_layout_basic_17__0.0%3Ahead_js&amp;entry=dijit_menu_17__0.0%3Ahead_js&amp;entry=dojo_data_17__0.0%3Ahead_js&amp;entry=dijit_form_17__0.0%3Ahead_js&amp;entry=dijit_layout_ext_17__0.0%3Ahead_js&amp;entry=dojox_xml_17__0.0%3Ahead_js&amp;entry=dojox_io_17__0.0%3Ahead_js&amp;entry=dojox_fx_17__0.0%3Ahead_js&amp;entry=dojox_gfx_17__0.0%3Ahead_js&amp;entry=dojox_charting_17__0.0%3Ahead_js&amp;entry=dojox_layout_basic_17__0.0%3Ahead_js&amp;entry=dojox_collections_17__0.0%3Ahead_js&amp;entry=dojox_uuid_17__0.0%3Ahead_js&amp;entry=dojox_data_basic_17__0.0%3Ahead_js&amp;entry=dojox_aspect_17__0.0%3Ahead_js&amp;entry=wp_portal_client_utils__0.0%3Ahead_js&amp;entry=dijit_tree_17__0.0%3Ahead_js&amp;entry=wp_portlet_client_model__0.0%3Ahead_js&amp;entry=mm_open_ajax_hub__0.0%3Ahead_js&amp;deferred=true"/><!--[if IE 7]>
+<script type="text/javascript">document.getElementsByTagName("html")[0].className+=" lotusui_ie lotusui_ie7";</script>
+<![endif]--> 
+<!--[if IE 8]>
+<script type="text/javascript">document.getElementsByTagName("html")[0].className+=" lotusui_ie8";</script>
+<![endif]-->
+<!--[if IE 9]>
+<script type="text/javascript">document.getElementsByTagName("html")[0].className+=" lotusui_ie9";</script>
+<![endif]-->
+<style id="layout-wstate-styles"></style><base href="https://www.manulife.com.hk/wps/portal/pwshome/dfp/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOJNAkxcDT0NjDwtAt1dDTz9zMLMPAKdDUPNjfTD9aNQlbgbg5U4-lhYhngYe4QZQBUY4ACOBvoF2dmBAHbi0mY!/">
+<meta name="themeCurrentLocaleString" content="en_US" />
+<!--  
+
+-->
+
+<title>Manulife Investment Choice Price | Manulife Fund Price</title>
+<!--  
+<title>Investment choice price / fund price</title>
+-->
+
+
+<link id="com.ibm.lotus.NavStateUrl" rel="alternate" href="/wps/portal/pwshome/dfp/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOJNAkxcDT0NjDwtAt1dDTz9zMLMPAKdDUPNjfTD9aNQlbgbg5U4-lhYhngYe4QZQBUY4ACOBvoF2dmBAHbi0mY!/dl5/d5/L2dJQSEvUUt3QS80SmlFL1o2XzRQNEUxSTAySThRR0UwSU42VjZIUUMxVTcy/" />
+
+<link rel="bookmark" title='Investment choice price / fund price' href='/wps/portal/pwshome/dfp/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOJNAkxcDT0NjDwtAt1dDTz9zMLMPAKdDUPNjfTD9aNQlbgbg5U4-lhYhngYe4QZQBUY4ACOBvoF2dmBAHbi0mY!/dl5/d5/L2dJQSEvUUt3QS80SmlFL1o2XzRQNEUxSTAySThRR0UwSU42VjZIUUMxVTcy/' hreflang="en"/>
+
+
+<meta name="msvalidate.01" content="AAA829963DA5CBC41A7C163CCD83A88C" /> 
+<meta name="google-site-verification" content="8OL2VjgPGiWPJuNQeRH6Bf-tapXFIfWQqIJ9fJJpwBE" />
+<script src="js/jquery-1.9.0.js"></script>
+
+  <script src="//assets.adobedtm.com/caa55bf3865be487a5b4dbd4e1effd4b7cf20ea0/satelliteLib-7c13f840093577044313984ef3f6df325ba54872.js"></script>
+<!-- rendering is delegated to the specified href for each locale -->
+</head>
+<body class="lotusui30dojo tundra locale_en mlpws-lang-en">	
+
+
+	<div class="wpthemeFrame">
+		
+		<header role="banner">
+			<div class="wpthemeHeader">
+				<!-- inserts the managed pages preview mode contributions -->
+				
+				<div class="wpthemeInner">
+					<!-- displays the state of the current page -->
+					<div class="wpthemeRight">
+						</div>
+				</div>
+			</div><!-- end header -->
+			<!-- inserts the universal toolbar -->
+			</header>
+		<!--end main banner-->
+
+		
+		
+		<div id="mlpws-wrapper">
+				<div class="wpthemeBanner">
+						<div class="wpthemeInner">
+							<div id="mlpws-head-menu">
+								
+
+
+
+
+
+
+
+
+
+    
+    
+   
+        
+        <script src="/wps/wcm/connect/pws/c16f6659-dd3e-4f7f-a9b8-d5241dc72f96/view-mode.txt?MOD=AJPERES&amp;CACHEID=c16f6659-dd3e-4f7f-a9b8-d5241dc72f96"></script>
+<style>
+.back-top{
+display:none;
+}
+</style>
+
+<link rel="stylesheet" title="" href="/wps/wcm/connect/pws/eff171c9-4c3a-4400-8648-06b2c15fdf7d/side-banner.css?MOD=AJPERES&amp;CACHEID=eff171c9-4c3a-4400-8648-06b2c15fdf7d" type="text/css" />
+
+<style>
+.wpthemeFrame{
+	min-width: 880px;
+}
+.wpthemeRight{
+	*float: none;
+}
+#mlpws-wrapper table.gradient-bottom{
+	background: url(/wps/wcm/connect/pws/a789993c-2751-4639-9e1a-44ebc8fe1152/main_content_bg.gif?MOD=AJPERES&amp;CACHEID=a789993c-2751-4639-9e1a-44ebc8fe1152) center bottom repeat-x;
+}
+
+.mlpws-show-hide-list-header-bg{  
+    background-image: url("/wps/wcm/connect/pws/2120f30f-1110-45e2-9dc3-fcffd1a800a5/wps22-bg.png?MOD=AJPERES&amp;CACHEID=2120f30f-1110-45e2-9dc3-fcffd1a800a5");
+    background-repeat: repeat;
+}
+#mlpws-wrapper .mlpws-full-width-content {
+width: auto;
+margin-left: 228px;
+}
+#mlpws-wrapper h1 {
+	margin-bottom: 7px;
+}
+#mlpws-wrapper h2 {
+	margin-bottom: 15px;
+}
+#mlpws-wrapper h3 {
+	margin-bottom: 14px;
+}
+#mlpws-wrapper h4 {
+	margin-bottom: 16px;
+}
+
+#mlpws-wrapper #mlpws-page-container{
+overflow-x: hidden;
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+    /*.mainwrapper, .footer {
+        width: 1200px;
+    }*/
+    #mlpws-wrapper{
+    	width:1200px;
+    }
+	#mlpws-page-banner-container img{
+		width:1200px;
+	}
+}
+/*notification bar styles */
+#alert_info_new {
+	margin: 0;
+}
+
+#left {
+	float: left;
+	width: 75%;
+	overflow: hidden;
+	text-align: center;
+	height: 55px;
+}
+
+#right {
+	height: 55px;
+padding-top: 11px;
+float: left;
+width: 25%;
+overflow: hidden;
+text-align: right;
+}
+
+.notification-bar-2 {
+	background: #BA4C00; /* #FAFAFA */
+	/*width: 100.4%;*/
+	position: static;
+
+       
+	margin: 0px 0px 0px -5px;
+	padding: 0px 0px 0px 0px;
+	border-bottom: 1px solid #A74400;
+	border-top: 0px solid #A74400;
+	
+	height: 64px;
+}
+
+.notification-bar-1 {
+	background: #BA4C00; /* #FAFAFA */
+
+	/*width: 100.4%;*/
+	position: static;
+       
+	margin: 0px 0px 0px -5px;
+	padding: 0px 0px 0px 0px;
+	border-bottom: 1px solid #A74400;
+	border-top: 1px solid #A74400;
+	
+	height: 64px;
+}
+
+.font-style {
+
+padding-top: 20px;
+padding-left: 12.5%;
+text-align:left;
+}
+
+.messagetext
+{
+display: inline;
+float:left;
+padding-right:8px;
+padding-top:4px;
+color:#ffffff;
+width:1084px;
+}
+
+.messagetextbar1
+{
+font-family: Arial;
+font-size: 15px;
+display: inline;
+float:left;
+padding-right:8px;
+padding-top:4px;
+color:#ffffff;
+width:1084px;
+max-width:1084px\9;
+width: 87%\9;
+
+text-align: justify;
+}
+
+
+
+
+
+.messagetextbar2
+{
+font-family: Arial;
+font-size: 15px;
+display: inline;
+float:left;
+padding-right:8px;
+padding-top:4px;
+color:#ffffff;
+width:1084px;
+width: 87%\9;
+max-width:1084px\9;
+
+
+text-align: justify;
+}
+.font-style a {
+	color: #E9E3E3;
+	font-size: 15px;
+	text-decoration: underline;
+	text-transform: none;
+}
+
+div.alert-box.alert-yellow {
+	background-color: #f3ba1b;
+	color: #fff;
+}
+
+.Notification-closebutton-2
+{
+
+cursor: pointer;
+}
+
+.Notification-closebutton-1
+{
+
+cursor: pointer;
+}
+@media only screen and (max-device-width:1024px){
+.messagetextbar2
+{
+
+width:1010px;
+}
+
+.messagetextbar1
+{
+
+width:1010px;
+}
+}
+@media only screen and (max-width:1260px){
+
+.messagetextbar2
+{
+
+width:91%;
+}
+
+.messagetextbar1
+{
+
+width:91%;
+}
+
+}
+@media only screen and (max-device-width:1230px){
+
+.messagetextbar2
+{
+
+width:91%;
+}
+
+.messagetextbar1
+{
+
+width:91%;
+}
+
+}
+
+@media only screen and (max-device-width:640px){
+
+.messagetextbar2
+{
+
+font-size:13px;
+}
+
+.messagetextbar1
+{
+
+font-size:13px;
+}
+
+}
+/*notification bar ends */
+
+</style>
+<script src="/wps/wcm/connect/pws/931b75f0-29d4-41df-a386-c67ab3053c99/rich-text.js?MOD=AJPERES&amp;CACHEID=931b75f0-29d4-41df-a386-c67ab3053c99" type="text/javascript"></script>
+
+
+<script language="JavaScript">
+
+// Migrate old code and function from old jQuery used for browser detection  
+// Limited scope pollution from any deprecated API
+(function() {
+
+var matched, browser;
+
+// Use of jQuery.browser is frowned upon.
+// More details: http://api.jquery.com/jQuery.browser
+// $.uaMatch maintained for back-compat
+$.uaMatch = function( ua ) {
+    ua = ua.toLowerCase();
+
+    var match = /(chrome)[ \/]([\w.]+)/.exec( ua ) ||
+        /(webkit)[ \/]([\w.]+)/.exec( ua ) ||
+        /(opera)(?:.*version|)[ \/]([\w.]+)/.exec( ua ) ||
+        /(msie) ([\w.]+)/.exec( ua ) ||
+        ua.indexOf("compatible") < 0 && /(mozilla)(?:.*? rv:([\w.]+)|)/.exec( ua ) ||
+        [];
+
+    return {
+        browser: match[ 1 ] || "",
+        version: match[ 2 ] || "0"
+    };
+};
+
+matched = $.uaMatch( navigator.userAgent );
+browser = {};
+
+if ( matched.browser ) {
+    browser[ matched.browser ] = true;
+    browser.version = matched.version;
+}
+
+// Chrome is Webkit, but Webkit is also Safari.
+if ( browser.chrome ) {
+    browser.webkit = true;
+} else if ( browser.webkit ) {
+    browser.safari = true;
+}
+
+$.browser = browser;
+})();
+
+/********************************old jQuery code part end**************************************/
+
+
+$(document).ready(function(){
+	//createSignature();
+	//loadDefaultFontSize();
+    if (!isClosedBrowserAlert()) {
+        var doAlert = false;
+        var version = $.browser.version;
+	var linkStyle = 'style="color:#1B8644;text-decoration:underline;" onmouseover="this.style.color=\'#264465\';" onmouseout="this.style.color=\'#1B8644\'";';
+        //original width is 880px
+        var html = '<div id="browser_alert" style="width:100%;background-color:#DACCA9;text-align:left;position:relative">';
+	html += '<div style="padding:22px;position:relative;">';    
+        html += '<div style="position: absolute;right:18px;top:18px"><a href="javascript:void(0);" onclick="closeBrowserAlert();" class="template_link_font">close</a></div>'; // close 
+        html += '<H1>You may want to upgrade your browser.</H1>';
+        html += '<p class="news">You\'re using an old version of browser right now. We will work better for you if you upgrade or switch to another browser<br/><br/>';
+        html += '<a href="http://www.microsoft.com/windows/internet-explorer/" target="_blank"'+ linkStyle +'>Internet Explorer</a><br/>';
+        html += '<a href="http://www.mozilla.com/" target="_blank"'+ linkStyle +'>Firefox</a><br/>';
+        html += '<a href="http://www.apple.com/safari/" target="_blank"'+ linkStyle +'>Safari</a><br/>';
+        html += '<a href="http://www.google.com/chrome/" target="_blank"'+ linkStyle +'>Google Chrome</a><br/>';
+        html += '</p></div></div>';
+    
+       if ($.browser.mozilla) {
+            //doAlert = (version.substr(0, 3) < '1.9'); // firefox 3 below //layout engine 1.9 below
+            doAlert = (parseFloat(version,10) < '1.9'); // firefox 3 below  //Added by Cognizant
+			//$('.mozilla-alert').html("mozilla doAlert is "+doAlert); //debug
+        }
+       if ($.browser.safari) { // safari or chrome
+            //doAlert = (version.substr(0, 6) < '528.16'); // safari 4 below //WebKit version 528.16 below
+            doAlert = (parseFloat(version.substr(0, 6),10) < parseFloat('528.16',10)); // safari 4 below  //Added by Cognizant
+			//$('.safari-alert').html("safari doAlert is "+doAlert); //debug
+        }
+       if ($.browser.msie) {
+            //doAlert = (version.substr(0, 3) < '8.0'); // ie 7 or below
+            doAlert = (parseFloat(version,10) < parseFloat('8.0',10)); // ie 7 or below  //Update by Jackson
+			//$('.msie-alert').html("msie doAlert is "+doAlert); //debug
+        }
+        
+        if (doAlert) {
+            //$(html).prependTo("center:first") //Commented by Cognizant
+            $(html).prependTo('#mlpws-wrapper') //Update by Jackson
+        }
+    }
+  });
+
+//Cognizant End
+
+function closeBrowserAlert() {
+    var expiredays = 1000;
+    var exdate = new Date();
+    exdate.setDate(exdate.getDate()+expiredays);
+    document.cookie = "closeBrowserAlert=" +escape(true)+ ';path=/'+ ";expires="+exdate.toUTCString();
+    $("#browser_alert").hide();
+    
+}
+function isClosedBrowserAlert() {
+    var cookieName = "closeBrowserAlert";
+    if (document.cookie.length>0) {
+        start = document.cookie.indexOf(cookieName + "=");
+        if (start!=-1) {
+            start = start + cookieName.length+1;
+            end = document.cookie.indexOf(";", start);
+            if (end == -1) end=document.cookie.length;
+            
+            return unescape(document.cookie.substring(start, end)) == "true";
+        }
+    }
+    return false;
+}
+</script>
+
+<script src="/wps/wcm/connect/pws/0dfd01e1-42ad-49ca-b2f0-4c9bb69bf2a2/change-fonts.js?MOD=AJPERES&amp;CACHEID=0dfd01e1-42ad-49ca-b2f0-4c9bb69bf2a2" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+   
+   
+   
+            
+            <script  type="text/javascript">
+            	var map = {};
+
+				
+				
+				
+				
+				
+								
+				
+				
+				
+		                  map["en"] = "/wps/portal/pwshome/dfp/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOJNAkxcDT0NjDwtAt1dDTz9zMLMPAKdDUPNjfTD9aNQlbgbg5U4-lhYhngYe4QZQBUY4ACOBvoF2dmBAHbi0mY!/dl5/d5/L0lDU1EvUU5RSy80SlNFL2Vu/";
+		                  
+		                  map["zh_TW"] = "/wps/portal/pwshome/dfp/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOJNAkxcDT0NjDwtAt1dDTz9zMLMPAKdDUPNjfTD9aNQlbgbg5U4-lhYhngYe4QZQBUY4ACOBvoF2dmBAHbi0mY!/dl5/d5/L0lDU1EvUU5RSy80SlNFL3poX1RX/";
+		                  
+		                  map["zh"] = "/wps/portal/pwshome/dfp/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOJNAkxcDT0NjDwtAt1dDTz9zMLMPAKdDUPNjfTD9aNQlbgbg5U4-lhYhngYe4QZQBUY4ACOBvoF2dmBAHbi0mY!/dl5/d5/L0lDU1EvUU5RSy80SlNFL3po/";
+		                  
+            	
+            	//console.log(map);
+            function switchLanguage(inputLang, targetUrl){
+
+            	try{
+     
+            	setCookie("ManulifeLang" ,inputLang);
+            	setCookie("com.ibm.wps.state.preprocessors.locale.LanguageCookie" ,inputLang);             	
+            	if(getParameterByName('loc')!=null && getParameterByName('loc')=="macau"){
+					setCookie("ManulifeLoc" ,"macau");
+				}				
+            	if(targetUrl==undefined){            						
+					if(window.location.href.toLowerCase().indexOf('/!ut/p/')!=-1) {					
+						window.location = map[inputLang];
+						return;
+					}
+					
+					if(window.location.href.toLowerCase().indexOf('/pwshome/dfp/')!=-1) {						
+						window.location = map[inputLang];
+						return;
+					}					
+					if(window.location.href.toLowerCase().indexOf('/pwsifhome/fund-price-performance/')!=-1) {						
+						window.location = map[inputLang];
+						return;
+					}
+
+
+					if(inputLang=="en")
+					{
+						
+						if ( (window.location.href.toLowerCase().indexOf("/wps/portal/connect/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/portal/zhconnect/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/Connect\+Content\+ZH/i, "connect+content+en").replace(/wps\/portal\/zhconnect/i, "wps/portal/enconnect");
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/myportal/connect/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/myportal/zhconnect/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/Connect\+Content\+ZH/i, "connect+content+en").replace(/wps\/myportal\/zhconnect/i, "wps/myportal/enconnect");
+							return;
+						}
+						
+						if ( (window.location.href.toLowerCase().indexOf("/wps/portal/pwsifhome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/portal/zhif/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/IF\+Content\+ZH/i, "if+content+en").replace(/wps\/portal\/zhif/i, "wps/portal/enif");
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/myportal/pwsifhome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/myportal/zhif/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/IF\+Content\+ZH/i, "if+content+en").replace(/wps\/myportal\/zhif/i, "wps/myportal/enif");
+							return;
+						}	
+						
+						if ( (window.location.href.toLowerCase().indexOf("/wps/portal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/portal/zh/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+ZH/i, "pws+content+en").replace(/wps\/portal\/zh/i, "wps/portal/en"); 
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/portal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/portal/zh_CN/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+SC/i, "pws+content+en").replace(/wps\/portal\/zh_CN/i, "wps/portal/en"); 
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/myportal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/myportal/zh/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+ZH/i, "pws+content+en").replace(/wps\/myportal\/zh/i, "wps/myportal/en"); 
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/myportal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/myportal/zh_CN/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+SC/i, "pws+content+en").replace(/wps\/myportal\/zh_CN/i, "wps/myportal/en"); 
+							return;
+						}
+						
+						if (window.location.href.toLowerCase().indexOf("/$project/")!=-1)
+						{
+							
+							if (window.location.href.toLowerCase().indexOf("/wps/portal/")!=-1)
+							{
+								
+								if (window.location.href.toLowerCase().indexOf("connect+content+zh")!=-1)
+								{	
+									window.location=window.location.href.replace(/Connect\+Content\+ZH/i, "connect+content+en").replace(/wps\/portal\/zhconnect/i, "wps/portal/enconnect"); 
+									return;
+								}
+								
+								else if (window.location.href.toLowerCase().indexOf("if+content+zh")!=-1)
+								{
+									window.location=window.location.href.replace(/IF\+Content\+ZH/i, "if+content+en").replace(/wps\/portal\/zhif/i, "wps/portal/enif"); 
+									return;
+								} 
+								
+								else if (window.location.href.toLowerCase().indexOf("pws+content+sc")!=-1)
+								{
+									window.location=window.location.href.replace(/PWS\+Content\+SC/i, "pws+content+en").replace(/wps\/portal\/zh_CN/i, "wps/portal/en"); 
+									return;
+								} 
+								else {									
+									window.location=window.location.href.replace(/PWS\+Content\+ZH/i, "pws+content+en").replace(/wps\/portal\/zh/i, "wps/portal/en"); 
+									return;
+								}
+								return;
+							}
+							if (window.location.href.toLowerCase().indexOf("/wps/myportal/")!=-1)
+							{
+								
+								if (window.location.href.toLowerCase().indexOf("connect+content+zh")!=-1)
+								{	
+									window.location=window.location.href.replace(/Connect\+Content\+ZH/i, "connect+content+en").replace(/wps\/myportal\/zhconnect/i, "wps/myportal/enconnect"); 
+									return;
+								}
+								
+								else if (window.location.href.toLowerCase().indexOf("if+content+zh")!=-1)
+								{
+									window.location=window.location.href.replace(/IF\+Content\+ZH/i, "if+content+en").replace(/wps\/myportal\/zhif/i, "wps/myportal/enif"); 
+									return;
+								} 
+								
+								else if (window.location.href.toLowerCase().indexOf("pws+content+sc")!=-1)
+								{
+									window.location=window.location.href.replace(/PWS\+Content\+SC/i, "pws+content+en").replace(/wps\/myportal\/zh_CN/i, "wps/myportal/en"); 
+									return;
+								} 
+								else {									
+									window.location=window.location.href.replace(/PWS\+Content\+ZH/i, "pws+content+en").replace(/wps\/myportal\/zh/i, "wps/myportal/en"); 
+									return;
+								}						
+								return;
+							}				
+						}
+						
+					
+						window.location = map[inputLang];
+					} 
+					
+					/* */
+					else if(inputLang=="zh") {
+						
+						if ( (window.location.href.toLowerCase().indexOf("/wps/portal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/portal/en/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+EN/i, "pws+content+sc").replace(/wps\/portal\/en/i, "wps/portal/zh_CN"); 
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/portal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/portal/zh/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+ZH/i, "pws+content+sc").replace(/wps\/portal\/zh/i, "wps/portal/zh_CN"); 
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/myportal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/myportal/en/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+EN/i, "pws+content+sc").replace(/wps\/myportal\/en/i, "wps/myportal/zh_CN"); 
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/myportal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/myportal/zh/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+ZH/i, "pws+content+sc").replace(/wps\/myportal\/zh/i, "wps/myportal/zh_CN"); 
+							return;
+						}	
+						
+						if (window.location.href.toLowerCase().indexOf("/$project/")!=-1)
+						{
+							
+							if (window.location.href.toLowerCase().indexOf("/wps/portal/")!=-1)
+							{
+								
+								if (window.location.href.toLowerCase().indexOf("connect+content+en")!=-1)
+								{	
+									window.location=window.location.href.replace(/Connect\+Content\+EN/i, "connect+content+zh").replace(/wps\/portal\/enconnect/i, "wps/portal/zhconnect"); 
+									return;
+								}
+								
+								else if (window.location.href.toLowerCase().indexOf("if+content+en")!=-1)
+								{
+									window.location=window.location.href.replace(/IF\+Content\+EN/i, "if+content+zh").replace(/wps\/portal\/enif/i, "wps/portal/zhif"); 
+									return;
+								} 
+								
+								else if (window.location.href.toLowerCase().indexOf("pws+content+zh")!=-1)
+								{
+									window.location=window.location.href.replace(/PWS\+Content\+ZH/i, "pws+content+zh").replace(/wps\/portal\/zh/i, "wps/portal/zh_CN"); 
+									return;
+								} 
+								else {									
+									window.location=window.location.href.replace(/PWS\+Content\+EN/i, "pws+content+sc").replace(/wps\/portal\/en/i, "wps/portal/zh_CN"); 
+									return;
+								}
+								return;
+							}
+							if (window.location.href.toLowerCase().indexOf("/wps/myportal/")!=-1)
+							{
+								
+								if (window.location.href.toLowerCase().indexOf("connect+content+en")!=-1)
+								{	
+									window.location=window.location.href.replace(/Connect\+Content\+EN/i, "connect+content+zh").replace(/wps\/myportal\/enconnect/i, "wps/myportal/zhconnect"); 
+									return;
+								}
+								
+								else if (window.location.href.toLowerCase().indexOf("if+content+en")!=-1)
+								{
+									window.location=window.location.href.replace(/IF\+Content\+EN/i, "if+content+zh").replace(/wps\/myportal\/enif/i, "wps/myportal/zhif"); 
+									return;
+								} 
+								
+								else if (window.location.href.toLowerCase().indexOf("pws+content+zh")!=-1){									
+									window.location=window.location.href.replace(/PWS\+Content\+ZH/i, "pws+content+sc").replace(/wps\/myportal\/zh/i, "wps/myportal/zh_CN"); 
+									return;
+								}
+								else {									
+									window.location=window.location.href.replace(/PWS\+Content\+EN/i, "pws+content+sc").replace(/wps\/myportal\/en/i, "wps/myportal/zh_CN"); 
+									return;
+								}
+								return;
+							}					
+						}
+							
+					
+						window.location = map[inputLang];
+					}
+					
+					
+					/* */
+					
+					else {
+						
+						if ( (window.location.href.toLowerCase().indexOf("/wps/portal/connect/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/portal/enconnect/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/Connect\+Content\+EN/i, "connect+content+zh").replace(/wps\/portal\/enconnect/i, "wps/portal/zhconnect");
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/myportal/connect/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/myportal/enconnect/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/Connect\+Content\+EN/i, "connect+content+zh").replace(/wps\/myportal\/enconnect/i, "wps/myportal/zhconnect");
+							return;
+						}
+						
+						if ( (window.location.href.toLowerCase().indexOf("/wps/portal/pwsifhome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/portal/enif/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/IF\+Content\+EN/i, "if+content+zh").replace(/wps\/portal\/enif/i, "wps/portal/zhif");
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/myportal/pwsifhome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/myportal/enif/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/IF\+Content\+EN/i, "if+content+zh").replace(/wps\/myportal\/enif/i, "wps/myportal/zhif");
+							return;
+						}
+						
+						if ( (window.location.href.toLowerCase().indexOf("/wps/portal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/portal/en/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+EN/i, "pws+content+zh").replace(/wps\/portal\/en/i, "wps/portal/zh"); 
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/portal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/portal/zh_CN/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+SC/i, "pws+content+zh").replace(/wps\/portal\/zh_CN/i, "wps/portal/zh"); 
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/myportal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/myportal/en/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+EN/i, "pws+content+zh").replace(/wps\/myportal\/en/i, "wps/myportal/zh"); 
+							return;
+						}
+						if ( (window.location.href.toLowerCase().indexOf("/wps/myportal/pwshome/")!=-1) || (window.location.href.toLowerCase().indexOf("/wps/myportal/zh_CN/")!=-1) )
+						{
+							
+							window.location=window.location.href.replace(/PWS\+Content\+SC/i, "pws+content+zh").replace(/wps\/myportal\/zh_CN/i, "wps/myportal/zh"); 
+							return;
+						}
+						
+						if (window.location.href.toLowerCase().indexOf("/$project/")!=-1)
+						{
+							
+							if (window.location.href.toLowerCase().indexOf("/wps/portal/")!=-1)
+							{
+							
+								if (window.location.href.toLowerCase().indexOf("connect+content+en")!=-1)
+								{	
+									window.location=window.location.href.replace(/Connect\+Content\+EN/i, "connect+content+zh").replace(/wps\/portal\/enconnect/i, "wps/portal/zhconnect"); 
+									return;
+								}
+								
+								else if (window.location.href.toLowerCase().indexOf("if+content+en")!=-1)
+								{
+									window.location=window.location.href.replace(/IF\+Content\+EN/i, "if+content+zh").replace(/wps\/portal\/enif/i, "wps/portal/zhif"); 
+									return;
+								} 
+								
+								else if (window.location.href.toLowerCase().indexOf("pws+content+sc")!=-1)
+								{
+									window.location=window.location.href.replace(/PWS\+Content\+SC/i, "pws+content+zh").replace(/wps\/portal\/zh_CN/i, "wps/portal/zh"); 
+									return;
+								} 
+								else {									
+									window.location=window.location.href.replace(/PWS\+Content\+EN/i, "pws+content+zh").replace(/wps\/portal\/en/i, "wps/portal/zh"); 
+									return;
+								}
+								return;
+							}
+							if (window.location.href.toLowerCase().indexOf("/wps/myportal/")!=-1)
+							{
+								
+								if (window.location.href.toLowerCase().indexOf("connect+content+en")!=-1)
+								{	
+									window.location=window.location.href.replace(/Connect\+Content\+EN/i, "connect+content+zh").replace(/wps\/myportal\/enconnect/i, "wps/myportal/zhconnect"); 
+									return;
+								}
+								
+								else if (window.location.href.toLowerCase().indexOf("if+content+en")!=-1)
+								{
+									window.location=window.location.href.replace(/IF\+Content\+EN/i, "if+content+zh").replace(/wps\/myportal\/enif/i, "wps/myportal/zhif"); 
+									return;
+								} 
+								
+								else if (window.location.href.toLowerCase().indexOf("pws+content+sc")!=-1)
+								{
+									window.location=window.location.href.replace(/PWS\+Content\+SC/i, "pws+content+zh").replace(/wps\/myportal\/zh_CN/i, "wps/myportal/zh"); 
+									return;
+								} 
+								else {									
+									window.location=window.location.href.replace(/PWS\+Content\+EN/i, "pws+content+zh").replace(/wps\/myportal\/en/i, "wps/myportal/zh"); 
+									return;
+								}
+								return;
+							}					
+						}
+							
+						
+						window.location = map[inputLang];
+					}
+            		
+            	}else{
+            		window.location = '?urile=wcm%3Apath%3A'+targetUrl;
+            	}
+				}catch(err){
+					alert("error");
+				}
+            }
+    
+			
+				function getParameterByName(name, url) {
+				    if (!url) {
+				      url = window.location.href;
+				    }
+				    name = name.replace(/[\[\]]/g, "\$&");
+				    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+				        results = regex.exec(url);
+				    if (!results) return null;
+				    if (!results[2]) return '';
+				    return decodeURIComponent(results[2].replace(/\+/g, " "));
+				}
+			
+            </script>
+			
+
+
+
+<script>
+	function setCookie(c_name,value){
+		var exdays = 365*5;
+		var exdate=new Date();
+		exdate.setDate(exdate.getDate() + exdays);
+
+		var c_value=escape(value) + ";expires=" + exdate.toUTCString();
+		document.cookie=c_name + "=" + c_value+ ";path=/;";
+	}
+
+	function getCookie(c_name){
+		var i,x,y,ARRcookies=document.cookie.split(";");
+		for (i=0;i<ARRcookies.length;i++)
+		{
+		  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+		  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+		  x=x.replace(/^\s+|\s+$/g,"");
+		  if (x==c_name)
+		    {
+		    return unescape(y);
+		    }
+		 }
+		 return 'undefined';
+	}
+
+	var currentLang = "en";
+	
+	
+	var requestLocale = "en_US";
+	
+		
+	var lang = getCookie("ManulifeLang");
+	
+
+	
+	//$("#mlpws-head-menu").before('<div style="color: white;">currentLang: '+currentLang+'<br>cookie lang: '+lang+'</div>');
+	
+	if(requestLocale=="zh_HK" && currentLang=="zh_TW"){
+		
+		switchLanguage("zh_TW");
+	}
+	
+	if(lang != 'undefined'){
+		
+		if(currentLang != lang){
+			;
+			switchLanguage(lang);
+		}
+	}else{
+		
+		
+		if(currentLang != "en"){			
+			switchLanguage("en");
+		}
+		
+		
+	}
+</script>
+
+
+
+<script src='/wps/wcm/connect/pws/c9192617-e873-40dc-af3b-cac2c6b7315d/JS-search-form.txt?MOD=AJPERES&amp;CACHEID=c9192617-e873-40dc-af3b-cac2c6b7315d'></script>
+
+<ul>
+    <li><a href="/wps/portal/pwshome/dfp/" >Investment choice price / fund price</a></li>
+<li><span class="sep">|</span></li>
+    <li><a href="http://www.manulife.com/public/home/index/0,,lang=en,00.html" target="_blank" >Manulife Worldwide</a></li>
+<li><span class="sep">|</span></li>
+    <li><a href="/wps/portal/pwshome/how-we-can-help/contact-us" >Contact Us</a></li>
+<li><span class="sep">|</span></li>
+    <li><a href="javascript:void(0);" onclick="javascript:window.open('/wps/wcm/connect/pws/pws+content+en/pwshome/_component/login-box','new','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=yes, width=300, height=200');">Login</a></li>
+<li><span class="sep">|</span></li>
+    <li><a href="javascript:switchLanguage('zh_TW');">中文</a></li>
+<li><span class="sep">|</span></li>
+    <li>Font <a href="javascript:void(0);" onclick="changeFontSize(0);" style="font-size: 10px;">A</a> <a href="javascript:void(0);" onclick="changeFontSize(1);" style="font-size: 12px;">A</a> <a href="javascript:void(0);" onclick="changeFontSize(2);" style="font-size: 14px;">A</a></li>
+</ul>
+<br class="clearfix" />
+<div id="logo"><a href="http://www.manulife.com.hk" ><!--
+<img src="/wps/wcm/connect/pws/cc9688a5-d06a-42a8-ab5f-b5ca487c3a31/logo_en.gif?MOD=AJPERES&amp;CACHEID=cc9688a5-d06a-42a8-ab5f-b5ca487c3a31" border="" width="205" height="73"  />-->
+<img src="/wps/wcm/connect/pws/3431059e-2335-42fd-89e1-b4b51156a563/logo_en.gif?MOD=AJPERES&amp;CACHEID=3431059e-2335-42fd-89e1-b4b51156a563" border="" width="205" height="73"  />
+</a></div>
+
+<div class="mlpws-search-box">
+
+<form 
+action='?urile=wcm%3apath%3a/PWS+Content+EN/pwshome/search/search-form' method="post" id="mlpws-search-form">
+<a href="" id = "search_submit" ><img src="/wps/wcm/connect/pws/ec014215-a549-41cb-9d49-b40e822736ce/bt_search_en.jpg?MOD=AJPERES&amp;CACHEID=ec014215-a549-41cb-9d49-b40e822736ce" border="" width="76" height="20"  /></a><input type="text" id="search_query" name="search_query" class="input" />
+</form>
+</div>
+    
+    
+
+</div>
+							<div class="wpthemeClear"></div>
+						</div>
+				</div><!--end head banner-->
+				
+				<!--end main banner-->
+			
+				<div class="wpthemeBanner">
+					<div class="wpthemeBannerInner">
+						<div class="wpthemeInner">
+
+							<div id="mlpws-menu">
+								
+		
+		<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+			
+							<td>
+									
+											  		<a href="/wps/portal/pwshome/about-manulife" 
+											      		class="wpthemeLeft 
+											      		wpthemeFirst"" >
+														<span lang="en" dir="ltr">
+													      About Manulife
+														</span>
+														</a>
+														
+							</td>
+					
+							<td class="separator">
+								<img src="images/top_divb.jpg" />
+							</td>	
+					
+							<td>
+									
+											  		<a href="/wps/portal/pwshome/for-individual/insurance/insurance" 
+											      		class="wpthemeLeft" >
+														<span lang="en" dir="ltr">
+													      For Individual
+														</span>
+														</a>
+														
+							</td>
+					
+							<td class="separator">
+								<img src="images/top_divb.jpg" />
+							</td>	
+					
+							<td>
+									
+											  		<a href="/wps/portal/pwshome/for-corporation/insurance/insurance" 
+											      		class="wpthemeLeft" >
+														<span lang="en" dir="ltr">
+													      For Corporation
+														</span>
+														</a>
+														
+							</td>
+					
+							<td class="separator">
+								<img src="images/top_divb.jpg" />
+							</td>	
+					
+							<td>
+								
+									
+										<a target="_blank" href="?uri=nm:oid:Z6_01A41A42IG7240IFBO7APT10G5" class=" wpthemeLeft " ><span lang="en" dir="ltr">MOVE</span></a>
+									
+							</td>
+					
+							<td class="separator">
+								<img src="images/top_divb.jpg" />
+							</td>	
+					
+							<td>
+									
+											  		<a href="/wps/portal/pwshome/how-we-can-help" 
+											      		class="wpthemeLeft" >
+														<span lang="en" dir="ltr">
+													      How We Can Help
+														</span>
+														</a>
+														
+							</td>
+					
+							<td class="separator">
+								<img src="images/top_divb.jpg" />
+							</td>	
+					
+							<td>
+									
+											  		<a href="/wps/portal/pwshome/join-us" 
+											      		class="wpthemeLeft" >
+														<span lang="en" dir="ltr">
+													      Join Us
+														</span>
+														</a>
+														
+							</td>
+					
+					</tr>
+				</table>
+				<br class="clearfix" />
+		</div>
+							<div class="wpthemeClear"></div>
+						</div>
+					</div>
+				</div><!--end main banner-->
+			
+				<div class="wpthemeSecondaryBanner">
+					
+					 
+	
+	<div id="mlpws-sub-menu" >
+	
+	
+	</div>
+
+ 				<script>
+  					$("div#mlpws-sub-menu").addClass("no-content");
+ 				 </script>
+ 
+ <div class="wpthemeClear"></div>
+				</div><!--end secondary banner-->
+								
+				
+			<!--end thrid banner-->
+			<div class="PWSDeviceDetect">
+				<!--User Tracking--><!--Update 5 aug 2013--><!--Sample Custom META Tags--><!--META NAME="DCSext.custom1" CONTENT="MyCustomValue1"--><!--META NAME="DCSext.custom2" CONTENT="value1;value2;value3-->
+
+
+<script>
+console.log("path:");
+</script>
+
+
+</div>
+
+				
+
+			<div id="mlpws-page-container" class="wpthemeMainContent" role="main" >
+
+					<div id= "mlpws-right-sidebar" >
+						
+
+<div id="right-navigation-container">
+
+	
+	<div id = "right-navigation">
+		
+	</div>
+
+</div>
+
+
+ 				<script>
+  					$("div#right-navigation").addClass("no-content");
+ 				</script>
+</div>
+					<div id="mlpws-page-banner-container"></div>
+				
+				
+				
+					<div class="wpthemeInner">	
+						<!-- asa markup contributions for pages -->	
+						
+
+<div class="asa.page" id="asa.page" style="display:none;">
+	<span class="asa.page.id">Z6_4P4E1I02I8QGE0IN6V6HQC1U72</span>
+
+	
+
+</div>
+
+<div class="wpthemeClear"></div>
+						
+<div class="wpthemeInner">
+	<div id="wpthemeStatusBarContainer" class="lotusui30">
+		
+		<noscript>
+			<div class="lotusMessage2" role="alert" wairole="alert">
+				<img class="lotusIcon lotusIconMsgError" src="icons/blank.gif" alt="Error" />
+				<span class="lotusAltText">Error:</span>
+				<div class="lotusMessageBody">Javascript is disabled in this browser. This page requires Javascript. Modify your browser's settings to allow Javascript to execute. See your browser's documentation for specific instructions.</div>
+			</div>
+		</noscript>
+	</div>
+</div></div>		
+
+					<!-- required - do not remove -->
+					<div style="display:none" id="portletState">{}</div><div id="layoutContainers" class="wpthemeLayoutContainers wpthemeLayoutContainersHidden" >
+						<div class="wpthemeInner">
+							<div class="wpthemeFrame">
+	<div id="mlpws-wrapper">
+		<div class="wpthemeSecondaryBanner">
+			<!--<a rel="dynamic-content" href="dyn-cs:id:PWSThemeSubNavigation"></a>-->
+			<div class="wpthemeClear"></div>
+		</div>
+
+		<div id="mlpws-page-container" class="wpthemeMainContent" role="main" >
+
+			<div id= "mlpws-right-sidebar" >
+
+			</div>
+			<div id="mlpws-page-banner-container"></div>
+
+			<div class="hiddenWidgetsDiv">
+				<div class='component-container ibmDndRow hiddenWidgetsContainer id-Z7_4P4E1I02I8QGE0IN6V6HQC1U75' name='ibmHiddenWidgets' ></div><div style="clear:both"></div>
+			</div>
+
+			<div>
+				<div class='component-container ibmDndColumn wpthemeHeadlineContainer id-Z7_4P4E1I02I8QGE0IN6V6HQC1U73' name='top' ></div><div class='component-container mlpws-main-content ibmDndColumn wpthemePrimaryContainer id-Z7_4P4E1I02I8QGE0IN6V6HQC1UN4' name='ibmMainContainer' ><div class='component-control id-Z7_4P4E1I02I8QGE0IN6V6HQC1UN6' ><span id="Z7_4P4E1I02I8QGE0IN6V6HQC1UN6"></span><section class="ibmPortalControl wpthemeControl wpthemeHidden a11yRegionTarget" role="region" >
+
+	
+	
+
+	<div class="asa.portlet" id="asa.portlet.Z7_4P4E1I02I8QGE0IN6V6HQC1UN6" style="display:none;">
+		<span class="asa.portlet.id">Z7_4P4E1I02I8QGE0IN6V6HQC1UN6</span>
+
+		
+
+	</div>
+	
+<!-- start header markup -->
+	<header class="wpthemeControlHeader dojoDndHandle">
+		<div class="wpthemeInner">
+			<h2>
+				<!-- lm-dynamic-title node marks location for dynamic title support -->
+ 				<span class="lm-dynamic-title asa.portlet.title a11yRegionLabel">Breadcrumb</span>            
+			</h2>
+			<a aria-haspopup="true" aria-label="Display menu" href="javascript:;" class="wpthemeIcon wpthemeMenuFocus" tabindex="0"
+				onclick="wptheme.contextMenu.init(this, 'skinAction', {'navID':ibmCfg.portalConfig.currentPageOID,'windowID':wptheme.getWindowIDFromSkin(this)});">
+				<span title="Display menu"><img aria-label="Display menu" alt="" src="/wps/themeModules/themes/html/dynamicSpots/icons/blank.gif"></span>
+				<span class="wpthemeAltText">Actions</span>
+				<span class="wpthemeMenuRight">
+					<div class="wpthemeMenuBorder">
+						<div class="wpthemeMenuNotchBorder"></div>
+						<!-- define the menu item template inside the "ul" element.  only "css-class", "description", and "title" are handled by the theme's sample javascript. -->
+						<ul class="wpthemeMenuDropDown wpthemeTemplateMenu" role="menu">
+							<li class="${css-class}" role="menuitem" tabindex="-1"><span class="wpthemeMenuText">${title}</span></li>
+						</ul>
+					</div>
+					<!-- Template for loading -->
+					<div class="wpthemeMenuLoading wpthemeTemplateLoading">Loading...</div>
+					<!-- Template for submenu -->
+					<div class="wpthemeAnchorSubmenu wpthemeTemplateSubmenu">
+						<div class="wpthemeMenuBorder wpthemeMenuSubmenu">
+							<ul id="${submenu-id}" class="wpthemeMenuDropDown" role="menu"><li role="menuitem" tabindex="-1"></li></ul>
+						</div>
+					</div>
+				</span>
+			</a>
+		</div>
+	</header>
+	
+	<div class="wpthemeControlBody wpthemeOverflowAuto wpthemeClear"> <!-- lm:control dynamic spot injects markup of layout control -->
+	<!-- asa.overlay marks the node that the AsaOverlayWidget will be placed in -->
+		<div style="position:relative; z-index: 1;">
+			<div class="analytics.overlay" ></div>
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+		
+			
+				
+					
+					 
+					   
+				        
+				            <link rel="stylesheet" title="" href="/wps/wcm/connect/pws/1a9b7ea7-a08b-4456-a4ba-381f4af11967/breadcrumb.css?MOD=AJPERES&amp;CACHEID=1a9b7ea7-a08b-4456-a4ba-381f4af11967" type="text/css" />
+<!--Breadcrumb-->
+<META NAME="WT.wsp_bc" CONTENT="Home|Investment choice price / fund price"/>
+
+
+<div id="mlpws-breadcrumb"><a href="?1dmy&urile=wcm%3apath%3a%2FPWS%2BContent%2BEN%2Fpwshome">Home</a>
+ 
+
+
+ > <a href="?1dmy&urile=wcm%3apath%3a%2FPWS%2BContent%2BEN%2Fpwshome%2Fdfp">Investment choice price / fund price</a>
+
+
+
+<a name="pagetop" style="display:inline-block"></a>
+</div>
+				        
+				    		  
+				
+				
+			
+		
+	
+
+    
+    	
+
+
+
+
+
+    	
+
+
+
+
+
+
+    	
+    
+<div class="wpthemeClear"></div>
+	</div>
+</section>
+</div><div class='component-control id-Z7_4P4E1I02I8QGE0IN6V6HQC1UN7' ><span id="Z7_4P4E1I02I8QGE0IN6V6HQC1UN7"></span><section class="ibmPortalControl wpthemeControl wpthemeHidden a11yRegionTarget" role="region" >
+
+	
+	
+
+	<div class="asa.portlet" id="asa.portlet.Z7_4P4E1I02I8QGE0IN6V6HQC1UN7" style="display:none;">
+		<span class="asa.portlet.id">Z7_4P4E1I02I8QGE0IN6V6HQC1UN7</span>
+
+		
+
+	</div>
+	
+<!-- start header markup -->
+	<header class="wpthemeControlHeader dojoDndHandle">
+		<div class="wpthemeInner">
+			<h2>
+				<!-- lm-dynamic-title node marks location for dynamic title support -->
+ 				<span class="lm-dynamic-title asa.portlet.title a11yRegionLabel">Investment choice price / fund price</span>            
+			</h2>
+			<a aria-haspopup="true" aria-label="Display menu" href="javascript:;" class="wpthemeIcon wpthemeMenuFocus" tabindex="0"
+				onclick="wptheme.contextMenu.init(this, 'skinAction', {'navID':ibmCfg.portalConfig.currentPageOID,'windowID':wptheme.getWindowIDFromSkin(this)});">
+				<span title="Display menu"><img aria-label="Display menu" alt="" src="/wps/themeModules/themes/html/dynamicSpots/icons/blank.gif"></span>
+				<span class="wpthemeAltText">Actions</span>
+				<span class="wpthemeMenuRight">
+					<div class="wpthemeMenuBorder">
+						<div class="wpthemeMenuNotchBorder"></div>
+						<!-- define the menu item template inside the "ul" element.  only "css-class", "description", and "title" are handled by the theme's sample javascript. -->
+						<ul class="wpthemeMenuDropDown wpthemeTemplateMenu" role="menu">
+							<li class="${css-class}" role="menuitem" tabindex="-1"><span class="wpthemeMenuText">${title}</span></li>
+						</ul>
+					</div>
+					<!-- Template for loading -->
+					<div class="wpthemeMenuLoading wpthemeTemplateLoading">Loading...</div>
+					<!-- Template for submenu -->
+					<div class="wpthemeAnchorSubmenu wpthemeTemplateSubmenu">
+						<div class="wpthemeMenuBorder wpthemeMenuSubmenu">
+							<ul id="${submenu-id}" class="wpthemeMenuDropDown" role="menu"><li role="menuitem" tabindex="-1"></li></ul>
+						</div>
+					</div>
+				</span>
+			</a>
+		</div>
+	</header>
+	
+	<div class="wpthemeControlBody wpthemeOverflowAuto wpthemeClear"> <!-- lm:control dynamic spot injects markup of layout control -->
+	<!-- asa.overlay marks the node that the AsaOverlayWidget will be placed in -->
+		<div style="position:relative; z-index: 1;">
+			<div class="analytics.overlay" ></div>
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
+			<div class="fixed-wrapper">	 
+
+<div class="container-fluid">
+			<div class="row">
+                <div class="ml-corpn-outer-wrapper">
+                	<div class="ml-corpn-inner-wrapper"> 
+  <div class="corpn-options-callback-wrapper">
+
+
+<h1 dir="ltr">
+	Investment choice price / fund price</h1>
+<p dir="ltr">
+	Everyday Manulife presents to you the most updated information for your investment reference. Just click the corresponding price links of your choice below:</p>
+<h3 dir="ltr">
+	<strong>Investment-Linked Assurance Schemes</strong></h3>
+<p dir="ltr" style="margin-bottom: 0px;">
+	For Hong Kong and Macau:</p>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=11&locale=en" title="Alpha" >Alpha</a></div>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=15&locale=en" title="Alpha Regular Investor" >Alpha Regular Investor</a></div>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=16&locale=en" >Manulife Investment Plus</a></div>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=5&locale=en" title="Manulife Investment Solutions" >Manulife Investment Solutions</a></div>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=3&locale=en" title="Matrix" >Matrix</a></div>
+<p dir="ltr" style="margin-bottom: 0px;margin-top: 15px;">
+	For Hong Kong only:</p>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=1&locale=en" title="Flexible Investment Protector" >Flexible Investment Protector</a></div>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=6&locale=en" title="Manulife Secure IncomePlus" >Manulife Secure IncomePlus</a></div>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=2&locale=en" title="ManuSelect Investment Protector" >ManuSelect Investment Protector</a></div>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=12&locale=en" title="Skyline" >Skyline</a></div>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=4&locale=en" title="VIP / ManuGift" >VIP +/ ManuGift</a> <sup><font size="1">#</font></sup></div>
+<div dir="ltr">
+	<span style="color: rgb(51, 51, 51); font-family: Arial;"><sup># </sup>VIP+ and ManuGift have not been authorized by the Securities and Futures Commission in Hong Kong and are not available for </span><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 11.818181991577148px;">policy applications.</span></div>
+<p dir="ltr">
+	&nbsp;</p>
+<h3 dir="ltr">
+	<strong>MPF &amp; ORSO</strong></h3>
+<div dir="ltr">
+	&gt;<span class="Apple-tab-span" style="white-space: pre"> </span> <a href="/wps/portal/pwshome/dfp/detail?catId=8&locale=en" title="Manulife Global Select (MPF) Scheme" >Manulife Global Select (MPF) Scheme</a></div>
+<div dir="ltr">
+	&gt;<span class="Apple-tab-span" style="white-space: pre"> </span> <a href="/wps/portal/pwshome/dfp/detail?catId=10&locale=en" title="ORSO - ManuFlex (MIL)" >ORSO - ManuFlex (MIL)</a></div>
+<div dir="ltr">
+	&nbsp;</div>
+<h3 dir="ltr">
+	<strong>Investment Funds</strong></h3>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=7&locale=en" title="Manulife Global Fund" >Manulife Global Fund</a></div>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=13&locale=en" title="Manulife Advanced Fund SPC" >Manulife Advanced Fund SPC</a></div>
+<div dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=17&locale=en" title="Manulife Hong Kong Series" >Manulife Hong Kong Series</a></div>
+<div dir="ltr">
+	&nbsp;</div>
+<h3 dir="ltr">
+	Macau Pension Fund</h3>
+<p dir="ltr">
+	&gt; <a href="/wps/portal/pwshome/dfp/detail?catId=14&locale=en" >Manulife (Macau) Pension Fund Scheme</a></p>
+<p dir="ltr">
+	Manulife (Macau) Pension Fund Scheme is not available to Hong Kong investors and not authorized by The Securities and Futures Commission of Hong Kong.</p>
+<style type="text/css">
+.modal{
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}</style>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+		
+		
+	
+
+    
+    	
+
+
+
+
+
+    	
+
+
+
+
+
+
+    	
+    
+<div class="wpthemeClear"></div>
+	</div>
+</section>
+</div></div><div class='component-container mlpws-layout-right ibmDndColumn wpthemeSecondaryContainer id-Z7_4P4E1I02I8QGE0IN6V6HQC1UF1' name='right' ></div><div class='component-container mlpws-full-width-content ibmDndColumn mlpws-layout-bottom wpthemeTertiaryContainer id-Z7_4P4E1I02I06RC0INBERCL42GC1' name='bottom' ><div class='component-control id-Z7_0HCEH9C0J0U170A92CVHNG20S0' ><span id="Z7_0HCEH9C0J0U170A92CVHNG20S0"></span><section class="ibmPortalControl wpthemeControl wpthemeHidden a11yRegionTarget" role="region" >
+
+	
+	
+
+	<div class="asa.portlet" id="asa.portlet.Z7_0HCEH9C0J0U170A92CVHNG20S0" style="display:none;">
+		<span class="asa.portlet.id">Z7_0HCEH9C0J0U170A92CVHNG20S0</span>
+
+		
+
+	</div>
+	
+<!-- start header markup -->
+	<header class="wpthemeControlHeader dojoDndHandle">
+		<div class="wpthemeInner">
+			<h2>
+				<!-- lm-dynamic-title node marks location for dynamic title support -->
+ 				<span class="lm-dynamic-title asa.portlet.title a11yRegionLabel">Footer</span>            
+			</h2>
+			<a aria-haspopup="true" aria-label="Display menu" href="javascript:;" class="wpthemeIcon wpthemeMenuFocus" tabindex="0"
+				onclick="wptheme.contextMenu.init(this, 'skinAction', {'navID':ibmCfg.portalConfig.currentPageOID,'windowID':wptheme.getWindowIDFromSkin(this)});">
+				<span title="Display menu"><img aria-label="Display menu" alt="" src="/wps/themeModules/themes/html/dynamicSpots/icons/blank.gif"></span>
+				<span class="wpthemeAltText">Actions</span>
+				<span class="wpthemeMenuRight">
+					<div class="wpthemeMenuBorder">
+						<div class="wpthemeMenuNotchBorder"></div>
+						<!-- define the menu item template inside the "ul" element.  only "css-class", "description", and "title" are handled by the theme's sample javascript. -->
+						<ul class="wpthemeMenuDropDown wpthemeTemplateMenu" role="menu">
+							<li class="${css-class}" role="menuitem" tabindex="-1"><span class="wpthemeMenuText">${title}</span></li>
+						</ul>
+					</div>
+					<!-- Template for loading -->
+					<div class="wpthemeMenuLoading wpthemeTemplateLoading">Loading...</div>
+					<!-- Template for submenu -->
+					<div class="wpthemeAnchorSubmenu wpthemeTemplateSubmenu">
+						<div class="wpthemeMenuBorder wpthemeMenuSubmenu">
+							<ul id="${submenu-id}" class="wpthemeMenuDropDown" role="menu"><li role="menuitem" tabindex="-1"></li></ul>
+						</div>
+					</div>
+				</span>
+			</a>
+		</div>
+	</header>
+	
+	<div class="wpthemeControlBody wpthemeOverflowAuto wpthemeClear"> <!-- lm:control dynamic spot injects markup of layout control -->
+	<!-- asa.overlay marks the node that the AsaOverlayWidget will be placed in -->
+		<div style="position:relative; z-index: 1;">
+			<div class="analytics.overlay" ></div>
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
+			
+
+
+<div class="fixed-wrapper">	
+
+<div class="ml-corpn-outer-wrapper">
+                	<div class="ml-corpn-inner-wrapper"> 
+  <div class="corpn-options-callback-wrapper">
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="mobile-nav"></div>
+<div class="contactus-result-div"></div>
+<div id="myModal" class="modal" data-backdrop="static">
+	<div class="modal-dialog modal-lg">
+		<div class="macau-modal-content"> 
+			<div id="mlpws-macau-important-note-dialog-modal"  title="">
+				<div id="mlpws-macau-disclaimer-header" class="mlpws-macau-disclaimer-header">
+					
+					<img src='/wps/wcm/connect/pws/cc9688a5-d06a-42a8-ab5f-b5ca487c3a31/logo_en.gif?MOD=AJPERES&amp;CACHEID=cc9688a5-d06a-42a8-ab5f-b5ca487c3a31'/>
+					
+					
+				</div>
+				<div id="mlpws-macau-disclaimer-content">
+					<div class="macau-disclaimerContent">
+						<p><style type="text/css">
+.macau-disclaimerContent {
+    padding-bottom: 0px !important;
+
+}@media only screen and (min-width: 1133px){
+.modal-lg {
+    width: 600px;
+}}</style>
+<p class="corpn-description" dir="ltr">
+	Manulife (International) Limited operates and provides services to customers in Macau and Hong Kong. You will now be re-directed to our Homepage.</p>
+<p class="corpn-description" dir="ltr">
+	To all our Macau customers, please note the relevant content and contact information applicable to you for any enquiries.</p>
+<p class="corpn-description" dir="ltr" style="text-align: center;">
+	Manulife (International) Limited<br />
+	Avenida De Almeida Ribeiro No. 61,<br />
+	Circle Square, 14 andar A,<br />
+	Macau.<br />
+	Hotline: (853) 8398 0383</p>
+</p>
+					</div>
+					<div class="macau-disclaimerButtonSection" id = "macau-disclaimerButtonSection" tabindex="1">
+						<table align="center" style="margin: auto;">
+							<tbody>
+								<tr>
+									<td>
+										<div id="macau-accept-button" name ="macau-accept-button"  class="macau-disclaimerButton" >
+											Proceed
+										</div>
+									</td>
+									
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>               
+		</div>
+	</div>
+</div>
+<div class="footer-wcm" style="display:none;">
+		<div class="container-fluid footer-wrapper">
+			<div class="fixed-wrapper">
+                <div class="ml-footer-outer-wrapper">
+                    <div class="footer-icons-lst">
+                        <div class="footer-links" dir="ltr">
+	<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Fhow-we-can-help%2Fcontact-us%2Fcontact-us" title="Contact us" ><span class="contactus icon-align">&nbsp;</span><span class="icon-txt contact-txt">Contact Us</span></a></div>
+<div class="footer-links expertstalk-link" dir="ltr">
+	<a href="/wps/portal/pwshome/how-we-can-help/contact-us/contact-us/&useDefaultText=0&useDefaultDesc=0" title="Arrange a call-back" ><span class="expertstalk icon-align">&nbsp;</span><span class="icon-txt icon-expertstalk">Arrange a call-back</span></a></div>
+<div class="footer-links faq-link" dir="ltr">
+	<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Fhow-we-can-help%2Fcustomer-support%2Ffaq%2Ffaq" title="Frequently asked questions" ><span class="faq icon-align">&nbsp;</span><span class="icon-txt icon-faq-txt">FAQ</span></a></div>
+<div class="sitemap-block" dir="ltr">
+	<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Fjoin-us%2Fjoin%2Bus" title="Careers" ><span class="careers icon-align">&nbsp;</span><span class="icon-txt">Careers</span></a></div>
+
+                         <div class="sitemap-block-right sitemap-contents footer-sitemap-contents">
+                            <a data-toggle="collapse" href="#sitemap-content" aria-expanded="false" aria-controls="sitemap-content" class="sitemap-link footer-site-map" >
+                                <span class="icon-txt icon-sitemap">Site Map</span> 
+                                <span class="glyphicon glyphicon-chevron-down pos-glyphicon" aria-hidden="true"></span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			
+			<div class=" collapse" id="sitemap-content"> 
+				<div class="footer-sitemap-block container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-3 col-custom-ipad-4 about-left custom-margin">
+							<ul class="lst-megamenu-footer-options" dir="ltr">
+	<li class="lst-level-footer">
+		About Manulife</li>
+	<li class="divider">
+		&nbsp;</li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Fabout-manulife%2Four-company%2Four-company" title="Our Company" >Our Company</a></li>
+	<li class="second-level-footer">
+		<a href="/wps/portal/pwshome/about-manulife/our-community-work/our-work" title="Our Community Work" >Our Community Work</a></li>
+	<li class="second-level-footer">
+		<a href="/wps/portal/pwshome/about-manulife/newsroom/press-release/press-release" title="Newsroom" >Newsroom</a></li>
+	<li class="second-level-footer">
+		<a href="http://www.manulife.com/public/investor/index/0,,lang=en&navId=640000,00.html" title="Investor Relations" target="_blank" >Investor Relations</a></li>
+</ul>
+
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-3 col-custom-ipad-4 custom-margin">
+							<ul class="lst-megamenu-footer-options" dir="ltr">
+	<li class="lst-level-footer more-spacing">
+		Individuals</li>
+	<li class="divider">
+		&nbsp;</li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Ffor-individual%2Four-solutions%2Finsurance%2Finsurance" title="Insurance" >Insurance</a></li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Ffor-individual%2Four-solutions%2Fretirement%2Fretirement" title="Retirement" >Planning for Retirement</a></li>
+	<li class="second-level-footer">
+		<a href="/wps/portal/en/?1dmy&urile=wcm:path:/pws+content+en/pwshome/for-individual/our-solutions/mpf/your-mpf" title="MPF" >MPF</a></li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Ffor-individual%2Four-solutions%2Fcredit-card%2Fcredit-card" title="Credit Card" >Credit Card</a></li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Ffor-individual%2Four-solutions%2Finvestment%2Finvestment" title="Investment" >Investment</a></li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Ffor-individual%2Four-solutions%2Finvestment-linked-assurance-scheme%2Finvestment-linked-assurance-scheme" title="Investment-linked Assurance Schemes" >Investment-linked Assurance Schemes</a></li>
+</ul>
+
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-3 col-custom-ipad-4 custom-margin">
+							<ul class="lst-megamenu-footer-options" dir="ltr">
+	<li class="lst-level-footer  more-spacing">
+		Corporations</li>
+	<li class="divider">
+		&nbsp;</li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Ffor-corporation%2Four-solutions%2Finsurance" title="Insurance" >Insurance</a></li>
+	<li class="second-level-footer">
+		<a href="/wps/portal/pwshome/for-corporation/mpf/" title="MPF" >MPF</a></li>
+	<li class="second-level-footer">
+		<a href="/wps/portal/en/?1dmy&urile=wcm:path:/pws+content+en/pwshome/for-corporation/our-solutions/orso" title="ORSO" >ORSO</a></li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Ffor-corporation%2Four-solutions%2Fmacau%2Fmacau-insurance-and-pension" title="Macau Pension" >Macau Pension</a></li>
+</ul>
+
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-3 col-custom-ipad-4 clearboth-tab custom-margin">
+							<ul class="lst-megamenu-footer-options" dir="ltr">
+	<li class="lst-level-footer more-spacing help-join-block">
+		How We Can Help</li>
+	<li class="divider">
+		&nbsp;</li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Fhow-we-can-help%2Four-solutions%2Four-solutions" title="Our Solutions" >Our Solutions</a></li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Fhow-we-can-help%2Fcustomer-support%2Fcustomer-support" title="Customer Support" >Customer Support</a></li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Fhow-we-can-help%2Fmanulife-widget%2Fmanulife-widget" title="Manulife Apps" >Manulife Apps</a></li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Fhow-we-can-help%2Fcontact-us%2Fcontact-us" title="Contact Us" >Contact Us</a></li>
+</ul>
+
+						</div>						
+						<div class="col-xs-12 col-sm-4 col-md-3 col-custom-ipad-4 clearboth-desk custom-margin">
+							<ul class="lst-megamenu-footer-options" dir="ltr">
+	<li class="lst-level-footer more-spacing help-join-block join-block">
+		Join Us</li>
+	<li class="divider">
+		&nbsp;</li>
+	<li class="second-level-footer">
+		<a href="/wps/portal/pwshome/join-us/join%20us" title="Becoming Manulifer" >Becoming Manulifer</a></li>
+	<li class="second-level-footer">
+		<a href="?1dmy&urile=wcm%3apath%3a%2Fpws%2Bcontent%2Ben%2Fpwshome%2Fjoin-us%2Fcorporate-staff%2Fcorporate-staff" title="Corporate Staff" >Corporate Staff</a></li>
+	<li class="second-level-footer">
+		<a href="/wps/portal/pwshome/join-us/financial-planner/mymanulife/" title="Financial Planner" >Financial Planner</a></li>
+</ul>
+
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-3 col-custom-ipad-4 custom-margin">
+							<ul class="lst-megamenu-footer-options" dir="ltr">
+	<li class="lst-level-footer more-spacing help-join-block join-block">
+		ManulifeMOVE</li>
+	<li class="divider">
+		&nbsp;</li>
+	<li class="second-level-footer">
+		<a href="http://manulifemove.hk/en/home/index.html" title="MOVE Plan" target="_blank" >MOVE&nbsp;Plan</a></li>
+</ul>
+
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-3 col-custom-ipad-4 custom-margin">
+							
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-3 col-custom-ipad-4 custom-margin">
+							
+						</div>
+					</div>
+				</div>
+			</div>	   
+            
+			<div class="fixed-wrapper">
+				<div class="ml-footer-copyright">
+                    <div class="row text-center">
+                    	<div class="col-xs-12 col-sm-12 col-md-4">
+	                        <ul class="copyright-lst-left">
+                           		<li class="footer-share-links">Follow:</li>
+    	                        <li><a href="http://www.youtube.com/user/HKManulifeCorpComm" target="_blank"  class="youtubeimg">&nbsp; </a></li>
+                                <li><a href="https://www.facebook.com/manulifehongkong" target="_blank"  class="fbimg">&nbsp;</a></li>
+<li><a href="/wps/portal/pwshome/pages/wechat" target="_blank"  class="wechatimg">&nbsp;</a></li>
+<li><a href="https://www.linkedin.com/company/manulife-hong-kong" target="_blank"  class="linkedinimg">&nbsp;</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-8">								
+						   <ul class="copyright-lst">
+                                <li class="footer-worldwide"><a href="http://www.manulife.com/public/home/index/0,,lang=en,00.html" >Manulife Worldwide</a></li>
+                                <li class="footer-nav-divider mob-divider-none">|</li>
+                                <li class="sitemap-list"><a href='?1dmy&urile=wcm%3apath%3a%2FPWS%2BContent%2BEN%2Fpwshome%2Fabout-manulife%2F_content%2Fsite-map%2Fsite-map'>Sitemap</a></li>
+                                <li class="footer-nav-divider">|</li>
+                                <li><a href='?1dmy&urile=wcm%3apath%3a%2FPWS%2BContent%2BEN%2Fpwshome%2Fabout-manulife%2F_content%2Fprivacy-policy%2Fstatement-of-privacy-policy'>Privacy Policy</a></li>
+                                <li class="footer-nav-divider">|</li>
+                                <li><a href='?1dmy&urile=wcm%3apath%3a%2FPWS%2BContent%2BEN%2Fpwshome%2Fabout-manulife%2F_content%2Flegal-by-terms-of-use%2Flegal-notices'>Terms Of Use</a></li>
+                            </ul>
+                            <p class="copyright-notice">© 2002-2018 Manulife (International) Limited (Incorporated in Bermuda with limited liability)</p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	
+
+</div>
+      <a id="scrollupLink" href="#bodytop" class="back-top">
+<img src="img/back-to-top.png" class="" />                     
+      </a>
+
+<script src="/wps/wcm/connect/pws/2e9461e4-6cda-4c02-9f0d-a6277c44871a/jquery-migrate-1.2.js?MOD=AJPERES&amp;CACHEID=2e9461e4-6cda-4c02-9f0d-a6277c44871a"></script>
+
+
+	<script>
+var dateobj= new Date();
+$('.copyright-notice .copyright-year-end').html(dateobj.getFullYear());
+
+
+
+
+$(document).ready(function(){
+$( "head" ).append( "<meta http-equiv='X-UA-Compatible' content='IE=edge'>" );
+$( "head" ).append( '<meta name="format-detection" content="telephone=no">' );
+$( "head" ).append( '<meta name="viewport" content="width=device-width, height=device-height ,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">' );
+checkMegamenu();
+
+if ($('input:hidden[id=ContactUsType]').length != 0) {
+	var type = $('#ContactUsType').val();
+	var layout = $("#ContactUsType").attr("layout");
+	if(layout=="rightside"){
+		layout_Content="Contactus-HTML-Right";
+		layout_PT= "PT-contactus-right-html";
+	}else if(layout=="floating"){
+		layout_Content="Contactus-Floating";
+		layout_PT= "PT-contact-us-html-slider";
+	}else{
+		layout_Content="ContactUS-Bottom";
+		layout_PT= "PT-contact-us-bottom-html";
+	}
+	if(type=="IFP"){		
+		$.get( "/wps/wcm/connect/pws/PWS+Content+EN/pwshome/pages/"+layout_Content+"-IFP?presentationtemplate=PWS%20Design/"+layout_PT, function( data ) {
+			$( ".contactus-result-div" ).html( data );	
+		});
+	}
+	if(type=="EB"){
+		$.get( "/wps/wcm/connect/pws/PWS+Content+EN/pwshome/pages/"+layout_Content+"-EB?presentationtemplate=PWS%20Design/"+layout_PT, function( data ) {
+			$( ".contactus-result-div" ).html( data );	
+		});
+	}
+	if(type=="MAM"){
+		$.get( "/wps/wcm/connect/pws/PWS+Content+EN/pwshome/pages/"+layout_Content+"-MAM?presentationtemplate=PWS%20Design/"+layout_PT, function( data ) {
+			$( ".contactus-result-div" ).html( data );	
+		});
+	}
+}
+function alignModal(){
+        var modalDialog = $(this).find(".modal-dialog"); 
+        modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
+    }
+    $(".modal").on("shown.bs.modal", alignModal);
+    $(window).on("resize", function(){
+        $(".modal:visible").each(alignModal);
+    });  
+
+
+if((getCookie("ManulifeLoc")!=null && getCookie("ManulifeLoc")=="macau") || (getParameterByName('loc')!=null && getParameterByName('loc')=="macau")){
+
+$('#myModal').modal("show");
+  setCookie("ManulifeLoc" ,"");
+
+}
+$("#macau-accept-button").click(function() {
+	$('#myModal').modal("hide");
+});
+if($(".recent-contextualcard").length<1){
+			$(".scroll-for-more-wrapper").addClass("displayNone");
+} else if ($(".products-details-list-title").length > 0){
+	$(".scroll-for-more-wrapper").css("margin-top", "20px");
+}
+var screenWidth = $( window ).width();
+if(screenWidth >= 1024)
+  {
+var offset =$(".baggy_login_btn_mob.pull-right").offset();
+$("#mlpws-right-sidebar").css({"left": $(".baggy_login_btn_mob.pull-right").offset().left-145});
+
+}else{
+sideBarPosition();
+}
+
+
+$(window).on('resize',function(){
+sideBarPosition();
+checkMegamenu();
+alignFooterContent();
+if( $('.read-article').length ){
+alignLearnMoreButton();
+}
+var screenWidth = $( window ).width();
+if(screenWidth >= 1024)
+  {
+var offset =$(".baggy_login_btn_mob.pull-right").offset();
+$("#mlpws-right-sidebar").css({"left": $(".baggy_login_btn_mob.pull-right").offset().left-145});
+
+
+}
+
+if(screenWidth > 1024){
+var offsetfooter =$(".contactus").offset();
+$(".footer-sitemap-block.container-fluid").attr('style', 'padding-left: '+ offsetfooter.left+'px !important;padding-right: '+ offsetfooter.left+'px !important');
+
+
+}
+if($(document).width() <1023 ){
+	$(".mlpws-main-content").css("min-height","0px");
+ }else{
+	$(".mlpws-main-content").css("min-height",dynamicHeight);
+ }
+
+});
+var dynamicHeight		= 0;
+window.onload=function(){
+
+alignFooterContent();
+
+var screenWidth = $( window ).width();
+if(screenWidth >= 1024)
+  {
+var offset =$(".baggy_login_btn_mob.pull-right").offset();
+$("#mlpws-right-sidebar").css({"left": offset.left-145});
+
+}else{
+
+
+sideBarPosition();
+checkMegamenu();
+}
+
+if(screenWidth > 1024){
+var offsetfooter =$(".contactus").offset();
+$(".footer-sitemap-block.container-fluid").attr('style', 'padding-left: '+ offsetfooter.left+'px !important;padding-right: '+ offsetfooter.left+'px !important');
+
+
+}
+dynamicHeight		=	 $(".mlpws-main-content").css("min-height");	
+	
+	 if($(document).width() <1023 ){
+		$(".mlpws-main-content").css("min-height","0px");
+	 }else{
+		$(".mlpws-main-content").css("min-height",dynamicHeight);
+	 }
+    };
+
+
+	
+function sideBarPosition(){
+var screenWidth = $( window ).width();
+if(screenWidth < 1024)
+  {
+  
+  $(".mobile-nav").html($("#mlpws-right-sidebar").html());
+  $("#mlpws-right-sidebar:first-child").css({"display": "none"});  
+  $("#mlpws-right-sidebar").css("width", "100%");
+ $("#mlpws-right-sidebar").css("margin-right", "0"); 
+
+       $("div#right-navigation").css({"width":"100%"});
+       $(".mobile-navdiv.mlpws-right-banner-box.no-padding.no-bg-color").css("width", "100%");
+  
+$("#stock-right-navigation").css("width", "100%");
+
+ 
+	
+$(".menu-item-container span").css("width", "90%");
+$(".menu-item-container a span").css("margin-right", "21px");
+
+ $("div.mlpws-right-banner-box").css("width", "100%");  
+$("div#right-navigation.no-content").css("height", "0"); 
+ 
+ $(".mnul-bu-rightpanel").css({"margin-right": "20px", "margin-left": "20px", "width": "90%"});
+$(".mlpws-right-banner-box.no-padding.no-bg-color").css({"margin-left": "20px", " margin-top": "17px" , "width": "90%"});
+$("div#right-navigation-container").css({"margin-top": "17px"});    
+if ($('.mobile-nav').is(':empty')){
+  $('.mobile-nav').hide();
+}
+ $(".wpthemeAccess").removeAttr("style");
+ }else{
+   $("#mlpws-right-sidebar").removeAttr("style");
+ $("#mlpws-right-sidebar").removeAttr("style");
+	$("div#right-navigation").removeAttr("style");
+	$("div#right-navigation").removeAttr("style");
+$(".menu-item-container span").removeAttr("style");
+$(".menu-item-container a span").removeAttr("style");
+$(".mobile-navdiv.mlpws-right-banner-box.no-padding.no-bg-color").removeAttr("style");
+ $("div.mlpws-right-banner-box").removeAttr("style"); 
+$("#stock-right-navigation").removeAttr("style");
+$(".mnul-bu-rightpanel").removeAttr("style");
+$("div#right-navigation").removeAttr("style");
+$(".mlpws-right-banner-box.no-padding.no-bg-color").removeAttr("style");
+$("div#right-navigation-container").removeAttr("style");
+ $(".mobile-nav").html("");
+ $("#mlpws-right-sidebar:first-child").css({"display": "block"});
+}
+}
+
+	
+	$(document).on('click', '.yamm .dropdown-menu', function(e) {
+		e.stopPropagation()
+	});  
+	
+	$(document).on('click','#search-icon-button',function(){
+		$('.searchbox_main_container').slideToggle(200);
+	});
+	$(document).on('click','#man-faq-accordion .panel-heading a',function(){
+		var flag = $(this).hasClass("collapsed");
+		if(!flag){
+			$(this).children().removeClass().addClass("glyphicon glyphicon-menu-down");
+		}
+		if(flag){
+			$(this).children().removeClass().addClass("glyphicon glyphicon-menu-right");
+		}
+	});
+	
+	$(document).ready(function() {
+	makeExpandable();
+
+		$("."+$(".mlpws-success-story-detail").attr("id")).addClass("active");
+$("#"+$(".corpn-options-callback-wrapper").attr("id")).addClass("active");
+
+
+		$('input[type=radio][name=inlineContactOptions]').change(function() {
+			if (this.value == 'financial') {
+			    $('.switch-visibility-form-service').hide();
+				$('.switch-visibility-form-financial').show();				
+			}
+			else if (this.value == 'customer') {				
+				$('.switch-visibility-form-financial').hide();	
+				$('.switch-visibility-form-service').show();
+			}
+		});		
+	
+		$('input[type=radio][name=inlineCustOptions]').change(function() {
+			$('.check-existing-cust').toggle();
+		});
+		$('input[type=radio][name=inlineExistingCustOptions]').change(function() {
+			$('.company-sp-selected').toggle();
+		});
+		$('input[type=checkbox][name=serviceOptionCheckboxes]').change(function() {
+			$(this).parent().toggleClass("make-it-bold");
+		});
+		$("#policy-opt-select-ml").change(function () {
+			var flag = this.value;
+			if(flag == 4 || flag == 5){
+				$('.company-specific-enquiry').show();
+			}
+			else{
+				$('.company-specific-enquiry').hide();
+			}
+		});	
+		$('#sitemap-content').on('shown.bs.collapse', function() {		 
+   			$(".pos-glyphicon").addClass('glyphicon-chevron-up').removeClass('glyphicon-chevron-down');
+			$(".ml-footer-outer-wrapper").css("border-bottom","none");
+			$(".sitemap-link .icon-sitemap").css("text-decoration", "underline");
+			$("#sitemap-content").css({"-moz-box-shadow":"rgba(57, 63, 72, .75) 9px 13px 15px 5px inset, rgba(57, 63, 72, 0.75) 0px -12px 16px 5px inset",
+									   "-webkit-box-shadow":"rgba(57, 63, 72, .75) 9px 13px 15px 5px inset, rgba(57, 63, 72, 0.75) 0px -12px 16px 5px inset",
+									   "box-shadow":"rgba(57, 63, 72, .75) 9px 13px 15px 5px inset, rgba(57, 63, 72, 0.75) 0px -12px 16px 5px inset"});
+			$('html, body').animate({
+				scrollTop: $(".yamm-content").offset().top
+			}, 1000);
+ 		});
+
+		$('#sitemap-content').on('hidden.bs.collapse', function() {
+			$(".pos-glyphicon").addClass('glyphicon-chevron-down').removeClass('glyphicon-chevron-up');
+			$(".sitemap-link .icon-sitemap").css("text-decoration","none");
+			$(".ml-footer-outer-wrapper").css("border-bottom","1px solid #fff");
+			$("#sitemap-content").css({"-moz-box-shadow":"none", "-webkit-box-shadow":"none", "box-shadow":"none"});			
+	 	});		
+$(".life-stage-product-items-wrapper .mobile-btn").on("click",function(){
+		if($(this).hasClass('glyphicon-menu-up')){
+				if($(window).height() < $(this).offset().top){
+					$('html,body').animate({ scrollTop: $(this).parent().parent().parent().parent().offset().top},'slow');
+				}
+				else{
+					$('html,body').animate({ scrollTop: $(this).offset().top},'slow');
+				}
+			}
+	});
+	$(".life-stage-product-items-wrapper .toggle-icons").on("click",function(){
+		if(($(this)).hasClass("toggler-minus")){
+			$('html,body').animate({ scrollTop: $(this).parent().parent().offset().top},'slow');
+		}
+	}); 
+		alignProductsAccordianArrowMiddle();
+	});
+		
+	$(".top-link").on("click",function(){
+		$('html, body').animate({
+			scrollTop: $($(this).attr("href")).offset().top
+		}, 1000);
+	});
+		
+	$(".map").width("width",$(this).parent().width());
+	
+	function init(mapdiv) {
+		var data = mapdiv.data();
+		if (!data.init) {
+			var myLatlng = new google.maps.LatLng(data.latitude,data.longitude);
+			var mapOptions = {
+				zoom: data.zoom,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(mapdiv[0], mapOptions);
+			
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: data.title
+			});
+			
+			data.init = true;
+		}
+	}
+	
+	function initialize(divID, latitude, longitude, zoom, title) {
+		$('#' + divID)
+		.data({
+			latitude: latitude,
+			longitude: longitude,
+			zoom: zoom,
+			title: title
+		})
+		.hide();
+	}
+	
+	function showHideMap(divID) {
+		
+		var mapdiv = $(divID);
+		
+		mapdiv.slideToggle(function () {
+			init(mapdiv);
+		});
+	}
+	
+	function showHideMapSingle(divID) {
+		
+		var mapdiv = $(divID),
+		parent = $(".multi-map");
+		mapdiv.siblings('div.map').each(function () {
+			var sibling = $(this);
+			parent.queue(function (next) {
+				sibling.slideUp(next);
+			});
+		});
+		parent
+		.queue(function (next) {
+			mapdiv.slideToggle(next);
+		})
+		.queue(function (next) {
+			init(mapdiv);
+			next();
+		});
+	}
+	
+	initialize("map_individual_insurance", 22.278494, 114.18498, 17.0, "The Lee Gardens");
+	
+	initialize("map_mpf_causeway_bay", 22.278494, 114.18498, 17.0, "The Lee Gardens");
+	
+	initialize("map_mpf_jordan", 22.3075051946882, 114.171069860458, 17.0, "Manulife Provident Funds Place");
+	
+	initialize("map_wealth_management_mutual_funds", 22.30787, 114.22359, 17.0, "Manulife Financial Tower");
+	
+	$(".map-toggle").on("click",function(){
+		showHideMap($(this).attr("href"));
+	});
+	$(".map-toggle-single").on("click",function(){
+		showHideMapSingle($(this).attr("href"));
+	});
+	
+
+
+	
+
+checkMegamenu();
+ 
+
+});
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="/wps/wcm/connect/pws/560fbbdd-ea6d-46f9-ad5f-94f91810ae1e/html5shiv.min.js?MOD=AJPERES&amp;CACHEID=560fbbdd-ea6d-46f9-ad5f-94f91810ae1e" type="text/javascript"></script>
+<script src="/wps/wcm/connect/pws/f9b392e5-b53c-4e41-8043-7ebf00b8f964/respond.min.js?MOD=AJPERES&amp;CACHEID=f9b392e5-b53c-4e41-8043-7ebf00b8f964" type="text/javascript"></script>
+<![endif]-->
+
+
+
+
+
+<script type="text/javascript">
+
+// move header
+$('.headerwrapper').html($('.headerwrapper-wcm').html());
+
+$('.headerwrapper-wcm').remove();
+
+
+// move side navigation
+$('#mlpws-right-sidebar').html($('<div>').append($('#right-navigation-container').clone()).html());
+
+$(document).ready(function(){
+
+	// move footer
+	$('.footer').html($('.footer-wcm').html());
+	$('.footer-wcm').remove();
+
+});
+
+
+</script>
+
+<script src="/wps/wcm/connect/pws/c16f6659-dd3e-4f7f-a9b8-d5241dc72f96/view-mode.txt?MOD=AJPERES&amp;CACHEID=c16f6659-dd3e-4f7f-a9b8-d5241dc72f96"></script>
+
+
+
+<script>
+jQuery(document).ready(function(){
+	$('#mainmenu ul li .loginboxul').hover(function(e) {
+        $('#mainmenu ul li ul.loginboxul li a').css('border-radius','3px 0 0 0');
+        $('#mainmenu ul li ul.loginboxul li:nth-child(2) a').css('border-radius','0 0 3px 3px');
+        $('#mainmenu ul li .loginboxul li:first-child a').css('border-bottom','1px solid #799A05');
+    },function() {
+        $('#mainmenu ul li .loginboxul li:first-child a').css('border-bottom','1px dotted #FFFFFF');
+    })
+    
+    function setupPlaceholder(inputid) {
+		if ($.browser.webkit) return false;
+		var target = $('#'+inputid);
+		if (target.length==0) {
+			target = $('input[type="text"], input[type="email"], input[type="search"]');
+		}
+		target.each( function(i, el) {
+			el = $(el);
+			var ph = el.attr('placeholder');
+			if (!ph) return true;
+			el.addClass('placeholder');
+			el.attr('value', ph);
+			el.focus( function(e) {
+				if( el.val()==ph ) {
+					el.removeClass('placeholder');
+					el.attr('value', '');
+				}
+			});
+			el.blur( function(e) {
+				if( $.trim(el.val())=='' ) {
+					el.addClass('placeholder');
+					el.attr('value', ph);
+				}
+			});
+			return true;
+		});
+		return true;
+    }
+    
+    $('.search_hover_cntr').hover(function(e){
+		$(this).addClass('searchDummyClass');
+        menulife.searchTangle = true;
+		menulife.OnMouseOutEvent();
+        $('.searchboxdiv').show();
+        $("#search_content").blur();
+    }, function(){
+		menulife.searchTangle = false;
+		setTimeout(searchOut,500);
+    });
+    $("#search_content").bind("focus",function(e){
+        var thisObj = $(this);
+        if(thisObj.val()=="Search"){
+            thisObj.val('');
+        }
+    });
+    $("#search_content").bind("blur",function(e){
+        var thisObj = $(this);
+        if(thisObj.val()==""){
+            thisObj.val('');
+        }
+    });
+    
+    $('.customerblock li').click(function(e){
+        $(this).addClass('dummyClass');
+        $('.customerblock li').each(function(){
+            if($(this).hasClass("dummyClass")) {
+                $(this).css('background-image','url(images/support_bg_onclick.png)');
+                $(this).removeClass('dummyClass')
+            }
+            else {
+                $(this).css('background-image','url(images/support_bg.png)');
+            }
+        });
+        e.stopPropagation();
+    });
+    $(document).click(function(){
+        $(".customerblock li").css('background-image','url(images/support_bg.png)');
+    });
+});
+
+function searchOut(){
+	if (menulife.searchTangle) return true;
+	$("#search_content").blur();
+	$('.searchboxdiv').hide();
+	return true;
+} 
+</script>
+
+
+	<script>
+	var currentTab=0;
+	$('.tab').click(function(){
+		$('.tab-info').finish();
+		var tabIndex = $(this).data('tab');	
+		$('.tab').removeClass('active');
+		$('.active-tab-holder').animate({
+			'margin-top':0,
+			'margin-bototm':25
+		},500,function(){
+		});
+		$('.tab-holder').removeClass('active-tab-holder');
+		$('.tab').addClass('inactive');		
+		if(currentTab==0){
+			$(this).addClass('active');
+			$(this).parent().addClass('active-tab-holder');
+			$(this).parent().animate({
+				'margin-top':25,
+				'margin-bottom':0
+			},500,function(){
+			});
+			$('*[data-tab-info="'+tabIndex+'"]').slideDown("slow",function(){
+				$(this).fadeTo("fast",1,function(){
+					currentTab=tabIndex;
+					$('html,body').animate({
+			        	scrollTop: $('*[data-tab="'+tabIndex+'"]').offset().top},
+			        'fast');
+				})
+			});
+		}		
+		else if(currentTab==tabIndex){
+			$('.tab').removeClass('inactive');
+			$('*[data-tab-info="'+tabIndex+'"]').fadeTo("fast",0.01,function(){
+				$(this).slideUp("slow",function(){
+					currentTab=0;
+					$('html,body').animate({
+			        	scrollTop: $('*[data-tab="'+tabIndex+'"]').offset().top},
+			        'fast');
+				});
+			});
+		}		
+		else{	
+				$(this).addClass('active');
+				$(this).parent().animate({
+					'margin-top':25,
+					'margin-bottom':0
+				},500,function(){
+				});
+				$(this).parent().addClass('active-tab-holder');
+				var isAbove = $('*[data-tab="'+tabIndex+'"]').offset().top > $('*[data-tab="'+currentTab+'"]').offset().top;
+				$('*[data-tab-info="'+currentTab+'"]').fadeTo("fast",0.01,function(){				
+					$(this).parent().parent().parent().find(".dummy").height( $('*[data-tab="'+tabIndex+'"]').offset().top);
+					var ht = $(this).parent().parent().parent().find(".dummy").height();
+					if(!isAbove){
+					$(this).parent().parent().parent().find(".dummy").show();
+					}
+					$(this).slideUp("fast",function(){					
+						$('*[data-tab-info="'+tabIndex+'"]').slideDown("fast",function(){
+							$(this).fadeTo("fast",1,function(){
+								currentTab=tabIndex;
+								if($('*[data-tab="'+tabIndex+'"]').offset().top-ht < 100){
+									ht = 0;
+								}
+								$('html,body').animate({
+									scrollTop: $('*[data-tab="'+tabIndex+'"]').offset().top-ht},
+								'fast');
+								$(".dummy").hide();
+							});
+						});
+					})
+				});
+			}
+			
+			$(".life-stage-product-name").css("border-bottom","1px solid #e3e3e3");
+			$(".active .life-stage-product-name").css("border-bottom","none");
+			
+	})
+
+
+
+
+	$('.btn-close').click(function(){
+		var tabIndex = $(this).parent().parent().data('tab-info');
+
+		$('.tab').removeClass('active inactive');
+		$('.active-tab-holder').animate({
+			'margin-top':0,
+			'margin-bototm':25
+		},500,function(){
+		});
+		$('.tab-holder').removeClass('active-tab-holder');
+		$('*[data-tab-info="'+tabIndex+'"]').fadeTo("fast",0.01,function(){
+			$(this).slideUp("slow",function(){
+				currentTab=0;
+			});
+		});
+	
+		$(".life-stage-product-name").css("border-bottom","1px solid #e3e3e3");
+		
+	})
+
+	
+	
+	
+
+$('.life-stage-product-items-wrapper .content .title').on("click",function(e){
+		e.preventDefault();
+		var $this	=$(".glyphicon",this);
+		var height = 0;
+		if($this.hasClass('glyphicon-menu-down')){
+			$('.mobile-btn').removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down');
+			if($(".life-stage-product-items-wrapper .content .title").hasClass("active")){
+				$(".life-stage-product-items-wrapper .content .title.active").parent().find(".desc").slideUp('slow',function(){
+					$(".title").removeClass("active");
+					$this.removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
+					$this.parent().parent().parent().addClass("active");		
+					$('html,body').animate({ scrollTop: $this.parent().parent().offset().top},'slow');
+				});
+				$this.parent().parent().parent().next().slideDown('slow');
+				
+			}
+			else{
+					$(".title").removeClass("active");
+					$this.removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
+					$this.parent().parent().parent().addClass("active");
+					$this.parent().parent().parent().next().slideDown('slow');
+					$('html,body').animate({ scrollTop: $this.parent().parent().offset().top},'slow');
+			}
+			
+		}else{
+			$this.removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down');
+			$(".title").removeClass("active");
+			$this.parent().parent().parent().next().slideUp('slow');
+		}
+	});
+				
+$(".tc-title").on("click",function(){
+		$this = $(this).find(".toggle-icons");
+		if($this.hasClass("toggler-plus")){
+			
+			$this.removeClass("toggler-plus");
+			$this.addClass("toggler-minus")
+		}
+		else{
+			$this.removeClass("toggler-minus");
+			$this.addClass("toggler-plus")
+		}
+		$($this.parent().next()).slideToggle( "slow");
+		if($this.hasClass("toggler-minus")){
+			$('html,body').animate({ scrollTop: $this.parent().parent().offset().top},'slow');
+		}
+	});
+	
+	
+
+	$( window ).resize(function() {
+		makeExpandable();
+	});
+	function makeExpandable(){
+		if($(window).width()<=767){
+			$('.expandable-content-block').each(function(){
+				var contentHeight=$(this).find('.expandable-container').height();
+				if(contentHeight>383){
+					$(this).addClass('expandable');
+					$(this).find('div.show-full-article').not('.clicked').show();
+					$(this).find('.expandable-container').addClass("showBoxShadow");
+				}
+			})
+		}else{
+			$('.expandable-content-block').each(function(){
+				$(this).removeClass('expandable');
+				$(this).find('.show-full-article').hide();
+				$(this).find('.expandable-container').removeClass("showBoxShadow");
+			})
+		}
+	}
+	$('.show-full-article').click(function(){
+		$(this).addClass('clicked');
+		$(this).prev().css('max-height','none');
+		$(this).prev().addClass('expanded');
+		$(this).hide();
+	})
+			
+
+				
+	$(document).ready(function(){
+		alignAccordianArrowMiddle();
+	});
+	
+function alignAccordianArrowMiddle(){
+		if($(window).width() < 768) {
+			$(".life-stage-product-items-wrapper .lifeStage-product-accordion").each(function() {
+			var contentHeight=($(this).find(".title").height()/2)-5;
+				$(this).find(".title span .glyphicon").css("top",contentHeight);
+			});
+		}
+	}
+	$( window ).on("resize",function() {
+		alignAccordianArrowMiddle();
+		alignProductsAccordianArrowMiddle();
+	});
+	
+
+function alignProductsAccordianArrowMiddle(){
+			if($(window).width() < 768) {
+				$(".products-accordion .accordion-1st-level").each(function() {
+					var contentHeight=(($(this).find("a .accordion-header").height()-10)/2);
+					$(this).find("a .ui-accordion-header-icon").css("margin-top",contentHeight);
+				});
+			}
+	}
+
+
+$(document).ready(function(){
+var screenWidth = $( window ).width();
+if(screenWidth >= 1024)
+  {
+  $("div#right-navigation-container").removeAttr("style");
+  }
+  });
+
+
+function viewport() {
+	var e = window, a = 'inner';
+	if (!('innerWidth' in window )) {
+					a = 'client';
+					e = document.documentElement || document.body;
+	}
+	return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+}
+function alignFooterContent(){
+var vpWidth = viewport().width;
+                if(vpWidth < 768) {
+                                var copyRightUlWidth=$(".copyright-lst").width();
+                                var rowContentWidth=0;
+                                $(".copyright-lst li").not(".footer-worldwide,.footer-nav-divider").each(function(){
+                                                rowContentWidth = rowContentWidth + $(this).width();
+                                });
+                                var widthDifference=(copyRightUlWidth - rowContentWidth -48)/2;
+                                $(".sitemap-list").css("padding-left",widthDifference);
+                }
+                else{
+                                $(".sitemap-list").css("padding-left",0);
+                }
+}
+
+
+
+
+
+
+	</script>
+
+
+
+<style>
+
+  @media screen and (max-width:1023px) {
+.mlpws-right-banner-box.no-padding.no-bg-color{
+ width: 90vw !important;
+}
+.mlpws-market-chart-output {
+margin: 15px auto 0px auto !important;
+}
+#stock-right-navigation{
+width:100% !important;
+}
+div#right-navigation-container{
+ margin-left:0px !important;
+}
+.mnul-bu-rightpanel{
+width: 90vw !important;
+}
+.img-responsive{
+
+}
+}
+ @media screen and (max-width:420px) {
+.mnul-bu-rightpanel{
+width: 85vw !important;
+}
+}
+ @media screen and (max-width:380px) {
+.mnul-bu-rightpanel{
+width: 83vw !important;
+}
+}
+ @media screen and (max-width:360px) {
+.mnul-bu-rightpanel{
+width: 81vw !important;
+}
+.account-box {
+    height: 175px !important;
+}
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+	.container-block .content p {
+		margin-bottom: 20px;
+	}
+}
+.custom-accordions-panel .panel-heading .panel-title a{	
+	font-family: "45light_Frutiger" !important;	
+}
+.custom-accordions-panel .panel-heading h3 {	
+	font-family: "65bold_Frutiger" !important;
+}
+.profile-name,.profile-title{
+   font-size: 24px !important;
+   font-weight:normal;
+
+}
+.manulife-carousel.thumbnail {
+    padding: 25px;
+}
+
+
+
+.mlpws-macau-disclaimer-header{
+	background-color:#095032 ;padding-top:20px;
+}
+
+.mlpws-macau-disclaimer-header img{
+	padding-top:10px;
+	padding-left:20px;
+	padding-bottom:10px;
+}
+
+.macau-disclaimerContent{
+	padding-left: 20px;
+	padding-right:20px;
+	padding-bottom:40px;
+	margin-bottom:40px;
+}
+
+.macau-disclaimerContent ul{
+	padding-left: 30px;
+}
+
+.macau-disclaimerButton {
+	padding: 8px;
+	border: 1px black solid;
+	background-color: #cccccc;
+	cursor: pointer;
+	text-align: center;
+}
+
+.macau-disclaimerButtonSection {
+	padding-bottom:40px;
+}
+.macau-modal-content {
+    position: relative;
+    background-color: #ffffff;
+}
+.macau-disclaimerButtonSection:focus{
+outline: none;
+}
+
+
+.utility-set{
+	width: 100%;
+    height: 40px;
+}
+.utility-set span.fund-text {	
+    vertical-align: middle;
+}
+.utility-set span.lang-icon.sc {
+    background: url(/wps/contenthandler/!ut/p/digest!keZUA2frhq9vOSgHdWTujA/war/ManulifeTheme2Static/themes/PWSTheme/img/sc.png) no-repeat center center;
+    background-size: 30%;
+}
+.utility-set span.lang-icon {
+    background-size: 30%;   
+}
+.utility-set span.contact-icon {
+   background-size: 25%;  
+}
+.lang-icon a:hover, .lang-icon a:focus{
+	text-decoration: none;
+}
+
+.linkedinimg-link {
+	position:relative;
+}
+.linkedinimg {
+	width:38px;
+	height:40px;
+	background:url('/wps/wcm/connect/pws/8c00d618-8614-401d-8815-21385cc72afa/linkedin.png?MOD=AJPERES') no-repeat;
+	background-size:32px 32px;
+	background-position:0px 2px;
+	display:block;
+}
+.linkedinimg:visited {
+	width:38px;
+	height:40px;	
+	background:url('/wps/wcm/connect/pws/8c00d618-8614-401d-8815-21385cc72afa/linkedin.png?MOD=AJPERES') no-repeat;
+	background-size:32px 32px;
+	background-position:0px 2px;
+	display:block;
+}
+.linkedinimg:hover , .linkedinimg.active{
+	width:38px;
+	height:40px;
+	background:url('/wps/wcm/connect/pws/815cad2c-8015-416c-b1e7-9a35bfb7733d/linkedin-hover.png?MOD=AJPERES') no-repeat;
+	no-repeat;
+	background-size:32px 32px;
+	background-position:0px 2px;
+	text-decoration:none;
+}
+
+
+</style>
+
+<script>
+function detectIE() {
+  var ua = window.navigator.userAgent;
+  var msie = ua.indexOf('MSIE ');
+   var trident = ua.indexOf('Trident/');
+  if (trident > 0) {    
+    var rv = ua.indexOf('rv:');
+    return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+  }
+  var edge = ua.indexOf('Edge/');
+  if (edge > 0) {   
+    return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+  } 
+  return false;
+}
+var IEversion;
+$(document).ready(function(){
+
+
+IEversion = detectIE();
+if((IEversion)&&(screenWidth<1024)){		
+		$(".img-responsive").css("max-width", "90vw"); 
+		$(".mnul-bu-rightpanel").css("width", "90vw !important");
+	}  
+     
+	 });
+
+$(window).on('resize',function(){
+var vpw=document.body.parentNode.clientWidth;
+if((IEversion)&&(vpw<1024)){		
+		$(".img-responsive").css("max-width", "90vw"); 
+		$(".mnul-bu-rightpanel").css("width", "90vw !important");
+	} 
+ });
+ function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+ 
+</script>
+
+
+
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKLNL9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TKLNL9');</script>
+
+<script type="text/javascript">
+
+var google_conversion_id = 936999825;
+var google_conversion_label = "y5sJCISav2IQkfflvgM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/936999825/?value=1.00&amp;currency_code=HKD&amp;label=y5sJCISav2IQkfflvgM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+
+		
+		
+	
+
+    
+    	
+
+
+
+
+
+    	
+
+
+
+
+
+
+    	
+    
+<div class="wpthemeClear"></div>
+	</div>
+</section>
+</div></div></div>
+		</div>
+		<!--end main content-->
+		
+	</div>
+
+</div><!-- end frame -->
+
+
+<div class="wpthemeClear"></div>
+						</div>
+					</div>
+					
+					
+					
+			</div>
+			<!--end main content-->
+			<div id="mlpws-footer">
+                
+            </div>
+		</div>
+				
+		<footer class="wpthemeFooter" role="contentinfo">
+			<div class="wpthemeInner">
+				<div class="wpthemeClear"></div>
+			</div>
+		</footer><!-- page footer -->
+	</div><!-- end frame -->
+		
+    <!-- This is responsible for bootstrapping the configuration for the javascript framework. 
+        This is located here instead of the head section to improve client performance. -->
+	<div class="wpthemeComplementaryContent" id="wpthemeComplementaryContent" role="region" aria-labelledby="wpthemeComplementaryContentText">
+		<span class="wpthemeAltText" id="wpthemeComplementaryContentText" >Complementary Content</span>
+		<script type="text/javascript" src="/wps/contenthandler/!ut/p/digest!bKgbsi0_HirdJ-3xhi021g/mashup/ra:collection?themeID=ZJ_NAK01440J08210A0A0MNUP2027&amp;locale=en&amp;mime-type=text%2Fplain&amp;entry=mm_enabler__0.0%3Aconfig_config_static&amp;entry=wp_portal__0.0%3Aconfig_config_static"></script><script type="text/javascript">i$.merge({"ibmCfg":{"enablerConfig":{"com.ibm.mashups.proxy.url":"/wps/proxy","com.ibm.mashups.productname":"IBM WebSphere Portal","com.ibm.mashups.anonymous.mode":"true","serviceDocumentUrl":"/wps/contenthandler/!ut/p/digest!wuxd2yTjmKFgpjt7FISvQA/model/service-document/?locale=en","anonymousUser":true,"user":null,"fontSizeEnlarged":false,"isBidi":false,"locale":"en","displayLocale":"en","com.ibm.mashups.contextroot":"/wps","defaultLayoutTemplateURI":"war:ManulifeThemeStatic/themes/PWSTheme/layout-templates/2ColumnEqual/","com.ibm.mashups.contenthandler.private":"/wps/mycontenthandler/!ut/p/digest!wuxd2yTjmKFgpjt7FISvQA/","com.ibm.mashups.contenthandler.public":"/wps/contenthandler/!ut/p/digest!wuxd2yTjmKFgpjt7FISvQA/"}},"portalMashupsConfig":{"serviceDocURL":"/wps/contenthandler/!ut/p/digest!wuxd2yTjmKFgpjt7FISvQA/model/service-document/?locale=en","contentHandlerContextPath":"/wps/contenthandler/!ut/p/digest!wuxd2yTjmKFgpjt7FISvQA/"}});
+	var ibmPortalCPConfig=null;
+ 
+ 
+ 
+var SemTagSvcPortalGlobalDynamic={
+basePumaResolvedUrl: ''+
+''+
+'/wps/contenthandler/!ut/p/digest!uFwSG-5necEDoNWMXcfzvg/um/secure/users/profiles?locale=en_US',
+availAttribUrl: ''+
+''+
+'/wps/contenthandler/!ut/p/digest!uFwSG-5necEDoNWMXcfzvg/um/secure/attributes/users?locale=en_US'
+};
+i$.merge({"ibmCfg":{"themeConfig":{"themeUniqueName":"ibm.portal.custom.ManulifeTheme","themeRootURI":"/wps/contenthandler/!ut/p/digest!6Wds1vGYt456xV9CsW6ASg/war/ManulifeThemeStatic/themes/PWSTheme","themeWebAppBaseURI":"/ManulifeThemeDynamic/themes/html/dynamicSpots","themeWebDAVBaseURI":"war:ManulifeThemeStatic/themes/PWSTheme/","modulesWebAppBaseURI":"/wps/themeModules","commonResourcesRootURI":"/wps/contenthandler/!ut/p/digest!ZAN8glVgXq3D62NtLnYvdQ/dav/fs-type1/common-resources","isRTL":false,"isPageRenderModeCSA":false,"portletOverridePageTitle":"Investment choice price / fund price","currentContentNodeOID":"Z6_4P4E1I02I8QGE0IN6V6HQC1U72","loadingImage":"css/images/loading.gif","dndSourceDefinitions":[{"id":"ibmDndColumn","object":"com.ibm.pb.dnd.layout.LayoutColumnSource","orientation":"vertical"},{"id":"ibmDndRow","object":"com.ibm.pb.dnd.layout.LayoutRowSource","orientation":"horizontal"}],"categorySources":[],"styleSources":[],"layoutSources":[]},"portalConfig":{"locale":"en","portalURI":"/wps/portal","contentHandlerURI":"/wps/contenthandler/!ut/p/digest!wuxd2yTjmKFgpjt7FISvQA/","isVirtualPortal":true,"canImpersonate":false,"themeRootURI":"/ManulifeThemeDynamic/themes/html/dynamicSpots","parentPageID":"Z6_4P4E1I02IG3GE0INAL89TH3HV0","currentPageOID":"Z6_4P4E1I02I8QGE0IN6V6HQC1U72","bootstrapState":"&lt;?xml version=&#034;1.0&#034; encoding=&#034;UTF-8&#034;?&gt;&lt;root xmlns=&#034;http://www.ibm.com/xmlns/prod/websphere/portal/v6.1/portal-state&#034;&gt;&lt;state type=&#034;navigational&#034;&gt;&lt;selection selection-node=&#034;Z6_4P4E1I02I8QGE0IN6V6HQC1U72&#034;/&gt;&lt;expansions&gt;&lt;node id=&#034;Z6_4P4E1I02IG3GE0INAL89TH3HV0&#034;/&gt;&lt;node id=&#034;Z6_000000000000000000000000A0&#034;/&gt;&lt;/expansions&gt;&lt;/state&gt;&lt;/root&gt;","isUserLoggedIn":false,"currentUser":"anonymous portal user","currentUserOID":"","aggregatedStyle":null,"wcmPageMetadata":{"contentRoot":null,"sharingScope":null}},"userName":""},"com_ibm_theme_capabilities":{"analytics_aggregator":"8.0","hasBaseURL":"true","oneUI":"3.0.1"}});ibmCfg.portalConfig.bootstrapState=(ibmCfg.portalConfig.bootstrapState||"").replace(/&lt;/gm, '<').replace(/&gt;/gm, '>').replace(/&amp;/gm, '&').replace(/&#039;/gm, "'").replace(/&#034;/gm, '"');
+(function(){ibmToolbarConfig = {projectUUID: "",toolbarMode: "closed",inManagedPages: "true"==="true",isPrivilegedUser: "false"==="true",hasEditSharedPermission: "false"==="true",dialogJavascriptURL: "/wps/contenthandler/!ut/p/digest!6Wds1vGYt456xV9CsW6ASg/dialog/dialogModal.js",dialogUtilsJavascriptURL: "/wps/contenthandler/!ut/p/digest!6Wds1vGYt456xV9CsW6ASg/dialog/dialogModalUtils.js",draftPageUUID: ""
+	}})();
+
+ibmCfg.portalConfig.asaConfig = {canViewAsaReports: "false",canViewAsaSitePromotions: "false",canCreateAsaSitePromotions: "false",canDeleteAsaSitePromotions: "false",reportConfig: {"scopes":[]}
+};</script><script type="text/javascript" src="/wps/contenthandler/!ut/p/digest!1H8SvJf47T1Enlak08Y1cQ/mashup/ra:collection?themeID=ZJ_NAK01440J08210A0A0MNUP2027&amp;locale=en&amp;mime-type=text%2Fplain&amp;entry=wp_one_ui_30__0.0%3Aconfig_js&amp;entry=wp_theme_menus__0.0%3Aconfig_js&amp;entry=wp_theme_skin_region__0.0%3Aconfig_js&amp;entry=wp_project_menu__0.0%3Aconfig_js&amp;entry=wp_theme_high_contrast__0.0%3Aconfig_js&amp;entry=wp_theme_edit__0.0%3Aconfig_js&amp;entry=wp_status_bar__0.0%3Aconfig_js"></script><a rel="alternate" id="config_js_deferred" href="/wps/contenthandler/!ut/p/digest!ZAN8glVgXq3D62NtLnYvdQ/mashup/ra:collection?themeID=ZJ_NAK01440J08210A0A0MNUP2027&amp;locale=en&amp;mime-type=text%2Fplain&amp;entry=mm_enabler__0.0%3Aconfig_js&amp;entry=mm_builder__0.0%3Aconfig_js&amp;entry=wp_pagebuilder_base__0.0%3Aconfig_js&amp;entry=wp_pagebuilder_ui__0.0%3Aconfig_js&amp;entry=mm_new_page_dialog__0.0%3Aconfig_js&amp;entry=wp_portal_client_rest_utils__0.0%3Aconfig_js&amp;entry=wp_tagging_rating__0.0%3Aconfig_js&amp;entry=mm_builder_dialogs__0.0%3Aconfig_js&amp;entry=mm_page_sharing_base__0.0%3Aconfig_js&amp;entry=mm_page_sharing_permission__0.0%3Aconfig_js&amp;entry=wp_wcm_modal_dialog__0.0%3Aconfig_js&amp;entry=wp_portal_ui_utils__0.0%3Aconfig_js&amp;entry=wp_content_mapping_picker__0.0%3Aconfig_js&amp;entry=wp_liveobject_framework__0.0%3Aconfig_js&amp;entry=mm_delete_control__0.0%3Aconfig_js&amp;entry=mm_delete_page__0.0%3Aconfig_js&amp;entry=wp_managed_pages_support_edit__0.0%3Aconfig_js&amp;entry=wp_project_menu_edit__0.0%3Aconfig_js&amp;entry=wp_federated_documents_picker__0.0%3Aconfig_js&amp;entry=wp_template_select_dialog__0.0%3Aconfig_js&amp;entry=wp_pagebuilder_data__0.0%3Aconfig_js&amp;entry=wp_pagebuilder_dnd__0.0%3Aconfig_js&amp;entry=mm_move_page__0.0%3Aconfig_js&amp;entry=wp_pagebuilder_controls__0.0%3Aconfig_js&amp;entry=wp_pagebuilder_shelf_base__0.0%3Aconfig_js&amp;entry=wp_analytics__0.0%3Aconfig_js&amp;entry=wp_theme_widget__0.0%3Aconfig_js&amp;entry=wp_toolbar__0.0%3Aconfig_js&amp;entry=mm_builder_wiring__0.0%3Aconfig_js&amp;deferred=true" style="display:none"></a><a rel="alternate" id="config_markup_deferred" href="/wps/contenthandler/!ut/p/digest!ZAN8glVgXq3D62NtLnYvdQ/mashup/ra:collection?themeID=ZJ_NAK01440J08210A0A0MNUP2027&amp;locale=en&amp;mime-type=text%2Fplain&amp;entry=mm_new_page_dialog__0.0%3Aconfig_markup&amp;entry=mm_page_sharing_base__0.0%3Aconfig_markup&amp;entry=wp_template_select_dialog__0.0%3Aconfig_markup&amp;entry=mm_move_page__0.0%3Aconfig_markup&amp;entry=wp_toolbar__0.0%3Aconfig_markup&amp;entry=mm_builder_wiring__0.0%3Aconfig_markup&amp;deferred=true" style="display:none"></a></div>
+	
+	<!--User Tracking--><!--Update 5 aug 2013--><!--Sample Custom META Tags--><!--META NAME="DCSext.custom1" CONTENT="MyCustomValue1"--><!--META NAME="DCSext.custom2" CONTENT="value1;value2;value3--><script type="text/javascript">_satellite.pageBottom();</script>
+</body>
+</html>

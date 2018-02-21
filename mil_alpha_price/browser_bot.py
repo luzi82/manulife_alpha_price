@@ -93,69 +93,61 @@ try:
     
     time.sleep(5)
     fund_list = get_fund_list(driver)
-    code_list  = [ fund['code'] for fund in fund_list ]
+    fund_code_list  = [ fund['code'] for fund in fund_list ]
+    fund_code_list = list(sorted(fund_code_list))
     
-    for code in code_list:
-        print('LHBQBRGZ {}'.format(code))
-        driver.get(index_url)
-        while True:
-            print('EYYHCGQW')
-            time.sleep(1)
-            if len(driver.find_elements_by_id('wpthemeComplementaryContent')) == 0:
-                print('OCZWMBJR wpthemeComplementaryContent')
+    driver.find_element_by_id(fund_list[0]['link']).send_keys(Keys.RETURN)
+    
+    while True:
+        try:
+            input_list = driver.find_elements_by_tag_name('input')
+            start_input_list = list(filter(lambda input:'startDateId' in input.get_attribute('id'),input_list))
+            end_input_list   = list(filter(lambda input:'endDateId' in input.get_attribute('id'),input_list))
+            download_input_list = list(filter(lambda input:'Download Data' in input.get_attribute('value'),input_list))
+            if len(start_input_list) <= 0:
                 continue
-            print('IOTSOEXK')
-            fund_list = get_fund_list(driver)
-            print('NGMNHMHX')
-            if fund_list is None:
-                print('BFFUSPOV fund_list')
+            if len(end_input_list) <= 0:
                 continue
-            print('VHKEDNRX')
-            tar_code_list = list(filter(lambda fund:fund['code'] == code,fund_list))
-            print('UYNPROCV')
-            if len(tar_code_list) <= 0:
-                print('ATPNAZKM tar_code_list')
+            if len(download_input_list) <= 0:
                 continue
-            print('OBSQYQLP')
             break
-        assert(len(tar_code_list)==1)
-        print('GEEQEXHZ')
-        driver.find_element_by_id(tar_code_list[0]['link']).send_keys(Keys.RETURN)
+        except:
+            continue
 
-        print('TLUPIURH')
+    assert(len(start_input_list)==1)
+    assert(len(end_input_list)==1)
+    assert(len(download_input_list)==1)
     
-        while True:
-            try:
-                input_list = driver.find_elements_by_tag_name('input')
-                start_input_list = list(filter(lambda input:'startDateId' in input.get_attribute('id'),input_list))
-                end_input_list   = list(filter(lambda input:'endDateId' in input.get_attribute('id'),input_list))
-                download_input_list = list(filter(lambda input:'Download Data' in input.get_attribute('value'),input_list))
-                if len(start_input_list) <= 0:
-                    continue
-                if len(end_input_list) <= 0:
-                    continue
-                if len(download_input_list) <= 0:
-                    continue
-                break
-            except:
-                continue
+    start_input = start_input_list[0]
+    end_input   = end_input_list[0]
+    download_input = download_input_list[0]
 
-        assert(len(start_input_list)==1)
-        assert(len(end_input_list)==1)
-        assert(len(download_input_list)==1)
-        
-        start_input = start_input_list[0]
-        end_input   = end_input_list[0]
-        download_input = download_input_list[0]
-        
-        start_input.send_keys('2000/01/01')
-        end_input.send_keys(yyyymmdd)
+    start_input.send_keys('2000/01/01')
+    end_input.send_keys(yyyymmdd)
+
+    option_list = driver.find_elements_by_tag_name('option')
+    option_value_list = [ option.get_attribute('value') for option in option_list ]
+    option_value_list = list(sorted(option_value_list))
+    
+    assert(fund_code_list==option_value_list)
+    
+    for option in option_list:
+
+        code = option.get_attribute('value')
+        option.click()
+
+        time.sleep(0.5)
+
         download_input.send_keys(Keys.RETURN)
         
         while not os.path.exists(os.path.join('tmp','fund.csv')):
             pass
 
+        time.sleep(0.5)
+
         shutil.move(os.path.join('tmp','fund.csv'), os.path.join('output','{}.csv'.format(code)))
+
+        time.sleep(0.5)
 
 except Exception:
     traceback.print_exc()

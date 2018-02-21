@@ -1,3 +1,6 @@
 __pycache__
 *.pyc
 /.project
+/.DS_Store
+/output
+/geckodriver.log

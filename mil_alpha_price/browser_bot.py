@@ -136,18 +136,20 @@ try:
         code = option.get_attribute('value')
         option.click()
 
-        time.sleep(0.5)
+        time.sleep(1)
 
         download_input.send_keys(Keys.RETURN)
-        
-        while not os.path.exists(os.path.join('tmp','fund.csv')):
-            pass
 
-        time.sleep(0.5)
+        time.sleep(1)
+
+        while not os.path.exists(os.path.join('tmp','fund.csv')):
+            time.sleep(0.5)
+
+        time.sleep(1)
 
         shutil.move(os.path.join('tmp','fund.csv'), os.path.join('output','{}.csv'.format(code)))
 
-        time.sleep(0.5)
+        time.sleep(1)
 
 except Exception:
     traceback.print_exc()

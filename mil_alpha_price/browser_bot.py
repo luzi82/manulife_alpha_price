@@ -98,7 +98,7 @@ try:
     ele.send_keys(Keys.RETURN)
 
     index_url = driver.current_url
-    print(index_url)
+    #print(index_url)
     
     time.sleep(5)
     fund_list = get_fund_list(driver)

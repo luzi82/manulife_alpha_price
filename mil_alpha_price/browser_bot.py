@@ -218,4 +218,4 @@ except Exception:
 if driver is not None:
     driver.close()
 
-sys.exit(1)
+sys.exit(ret_code)

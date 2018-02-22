@@ -9,6 +9,8 @@ import shutil
 import traceback
 import time
 import gc
+import re
+import sys
 
 FirefoxProfile = webdriver.firefox.firefox_profile.FirefoxProfile
 
@@ -39,6 +41,13 @@ def get_fund_list(driver):
         return fund_list
     except:
         return None
+
+def fix_fund_name(name):
+    name = re.sub('[^0-9a-zA-Z ]','',name)
+    name = name.strip()
+    return name
+
+ret_code = 0
 
 yyyymmdd = datetime.date.today().strftime('%Y/%m/%d')
 
@@ -95,6 +104,8 @@ try:
     fund_list = get_fund_list(driver)
     fund_code_list  = [ fund['code'] for fund in fund_list ]
     fund_code_list = list(sorted(fund_code_list))
+
+    fund_code_name_dict = { fund['code']: fund['name'] for fund in fund_list }
     
     driver.find_element_by_id(fund_list[0]['link']).send_keys(Keys.RETURN)
     
@@ -133,26 +144,78 @@ try:
     
     for option in option_list:
 
-        code = option.get_attribute('value')
-        option.click()
+        good = False
+        
+        for _ in range(3):
 
-        time.sleep(1)
+            csv_filename = os.path.join('tmp','fund.csv')
+            if os.path.exists(csv_filename):
+                os.remove(csv_filename)
 
-        download_input.send_keys(Keys.RETURN)
+            code = option.get_attribute('value')
+            option.click()
+    
+            time.sleep(1)
+    
+            download_input.send_keys(Keys.RETURN)
+    
+            # wait file exist
+            for _ in range(5):
+                if os.path.exists(csv_filename):
+                    break
+                time.sleep(1)
+            
+            if not os.path.exists(csv_filename):
+                print('BBZRBEKO {} not found: {}'.format(csv_filename, code))
+                continue
 
-        time.sleep(1)
+            # wait file size more than 0
+            file_size = 0
+            for _ in range(5):
+                file_size = os.path.getsize(csv_filename)
+                if file_size > 0:
+                    break
+                time.sleep(1)
 
-        while not os.path.exists(os.path.join('tmp','fund.csv')):
-            time.sleep(0.5)
-
-        time.sleep(1)
-
+            if file_size == 0:
+                print('KMQBBCBN file_size == 0: {}'.format(code))
+                continue
+    
+            # wait file size stop grow
+            while True:
+                time.sleep(1)
+                file_size_tmp = os.path.getsize(csv_filename)
+                if file_size_tmp == file_size:
+                    break
+                file_size = file_size_tmp
+            
+            # check row not empty
+            csv_data = common.read_csv(csv_filename)
+            if len(csv_data) <= 0:
+                print('YBTZYLMW len <= 0: {}'.format(code))
+                continue
+            
+            # check fund name correct
+            name_0 = fix_fund_name(csv_data[0]['Name of Investment Choice'])
+            name_1 = fix_fund_name(fund_code_name_dict[code])
+            if name_0 != name_1:
+                print('VIIKIZNQ name not match: {}: "{}" != "{}"'.format(code,name_0,name_1))
+                continue
+            
+            good = True
+            break
+        
+        assert(good)
+    
         shutil.move(os.path.join('tmp','fund.csv'), os.path.join('output','{}.csv'.format(code)))
 
         time.sleep(1)
 
 except Exception:
+    ret_code = 1
     traceback.print_exc()
 
 if driver is not None:
     driver.close()
+
+sys.exit(1)

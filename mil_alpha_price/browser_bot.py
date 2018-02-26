@@ -144,15 +144,17 @@ try:
     
     for option in option_list:
 
+        code = option.get_attribute('value')
+        print('NTHLNZEZ download start: {}'.format(code))
+
         good = False
-        
+
         for _ in range(3):
 
             csv_filename = os.path.join('tmp','fund.csv')
             if os.path.exists(csv_filename):
                 os.remove(csv_filename)
 
-            code = option.get_attribute('value')
             option.click()
     
             time.sleep(1)
@@ -208,6 +210,8 @@ try:
         assert(good)
     
         shutil.move(os.path.join('tmp','fund.csv'), os.path.join('output','{}.csv'.format(code)))
+
+        print('QTHAEJNF download end: {}'.format(code))
 
         time.sleep(1)
 

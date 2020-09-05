@@ -14,7 +14,7 @@ import sys
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('firefox_bin')
+parser.add_argument('firefox_bin', nargs='?')
 args = parser.parse_args()
 
 args_firefox_bin = args.firefox_bin if args.firefox_bin else '/usr/bin/firefox'

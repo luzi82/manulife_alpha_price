@@ -68,17 +68,21 @@ try:
     driver = webdriver.Firefox(firefox_profile=profile)
     
     driver.get(HOME_URL)
+    time.sleep(1)
     
-    ele_list = driver.find_elements_by_tag_name('a')
-    ele_list = list(filter(lambda _ele:_ele.text.strip() == 'Alpha', ele_list))
+    while True:
+        ele_list = driver.find_elements_by_tag_name('a')
+        ele_list = list(filter(lambda _ele:_ele.text.strip() == 'Alpha', ele_list))
+        if (len(ele_list)>0): break
+        time.sleep(1)
     assert(len(ele_list)==1)
     ele = ele_list[0]
     
     ele.send_keys(Keys.RETURN)
-
     time.sleep(1)
+
     while len(driver.find_elements_by_id('wpthemeComplementaryContent')) == 0:
-        pass
+        time.sleep(1)
     
     while True:
         try:

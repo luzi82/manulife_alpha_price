@@ -11,6 +11,13 @@ import time
 import gc
 import re
 import sys
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('firefox_bin')
+args = parser.parse_args()
+
+args_firefox_bin = args.firefox_bin if args.firefox_bin else '/usr/bin/firefox'
 
 FirefoxProfile = webdriver.firefox.firefox_profile.FirefoxProfile
 
@@ -65,7 +72,7 @@ profile.set_preference("browser.download.dir", os.path.join(os.getcwd(),'tmp'))
 driver = None
 
 try:
-    driver = webdriver.Firefox(firefox_profile=profile)
+    driver = webdriver.Firefox(firefox_profile=profile, executable_path='tmp_0/geckodriver', firefox_binary=args_firefox_bin)
     
     driver.get(HOME_URL)
     time.sleep(1)

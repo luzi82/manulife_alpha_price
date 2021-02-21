@@ -1,6 +1,4 @@
-#!/bin/bash
-
-set -e
+#!/bin/bash -e
 
 rm -rf output
 
@@ -11,9 +9,10 @@ rm -rf venv
 
 mkdir -p tmp_0
 pushd tmp_0
-wget https://github.com/mozilla/geckodriver/releases/download/v0.27.0/geckodriver-v0.27.0-linux64.tar.gz
-sha256sum -c ../geckodriver-v0.27.0-linux64.tar.gz.sha256sum
-tar -xzvf geckodriver-v0.27.0-linux64.tar.gz
+wget https://github.com/mozilla/geckodriver/releases/download/v0.29.0/geckodriver-v0.29.0-linux64.tar.gz
+wget https://github.com/mozilla/geckodriver/releases/download/v0.29.0/geckodriver-v0.29.0-linux64.tar.gz.asc
+sha256sum -c ../geckodriver-v0.29.0-linux64.tar.gz.sha256sum
+tar -xzvf geckodriver-v0.29.0-linux64.tar.gz
 popd
 
 python3 -m venv venv

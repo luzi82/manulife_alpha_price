@@ -198,7 +198,7 @@ try:
         time.sleep(1)
 
         # wait data exist
-        for _ in range(5):
+        while True:
             ele_list = driver.find_elements_by_tag_name('table')
             ele_list = list(filter(lambda _ele:_ele.get_attribute('role') == 'grid', ele_list))
             if len(ele_list)==2: break

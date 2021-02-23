@@ -209,7 +209,6 @@ try:
         csv_data_list = []
         tr_list = table_ele.find_elements_by_tag_name('tr')
         for tr in tr_list[1:]:
-            tr = tr_list[1]
             td_list = tr.find_elements_by_tag_name('td')
             assert(len(td_list)==4)
             csv_data_list.append({

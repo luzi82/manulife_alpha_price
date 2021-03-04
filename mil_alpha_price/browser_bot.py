@@ -1,4 +1,5 @@
-HOME_URL='https://fundprice.manulife.com.hk/wps/portal/pwsdfphome/dfp/detail?catId=11&locale=en'
+#HOME_URL='https://fundprice.manulife.com.hk/wps/portal/pwsdfphome/dfp/detail?catId=11&locale=en'
+HOME_URL='https://fundprice.manulife.com.hk/wps/portal/pwsdfphome/dfp'
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys

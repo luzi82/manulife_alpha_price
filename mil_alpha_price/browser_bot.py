@@ -79,11 +79,15 @@ def wait_stale(ele):
         pass
 
 def driver_get(driver, url):
-    for _ in range(5):
+    TRIAL = 5
+    for t in range(TRIAL):
         try:
+            print(f'driver.get {url} : {t}/{TRIAL} START')
             driver.get(url)
             return
         except:
+            print(f'driver.get {url} : {t}/{TRIAL} FAIL')
+            traceback.print_exc()
             pass
     assert(false)
 

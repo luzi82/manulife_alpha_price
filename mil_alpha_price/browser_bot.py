@@ -78,6 +78,15 @@ def wait_stale(ele):
     except selenium.common.exceptions.StaleElementReferenceException as e:
         pass
 
+def driver_get(driver, url):
+    for _ in range(5):
+        try:
+            driver.get(url)
+            return
+        except:
+            pass
+    assert(false)
+
 ret_code = 0
 
 today_dt = datetime.date.today()
@@ -102,7 +111,7 @@ try:
     
     HOME_URL = 'https://www.manulife.com.hk/en/individual/fund-price/investment-linked-assurance-scheme.html/v2?product=Alpha'
     print(f'AXNGEAIBEW go {HOME_URL}')
-    driver.get(HOME_URL)
+    driver_get(driver,HOME_URL)
     time.sleep(1)
     
     print('SCLASBLR Detect Agree button')
@@ -178,7 +187,7 @@ try:
             if fn is not None:
                 os.remove(fn)
         
-            driver.get(url)
+            driver_get(driver,url)
             time.sleep(5)
             
             print('UKXLUOUQ Detect if less than six month')

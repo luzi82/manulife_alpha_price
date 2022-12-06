@@ -132,12 +132,12 @@ try:
     ele = ele_list[0]
     
     print('VZTTTYLO Enable Agree button')
-    driver.execute_script('$(".cmp-modal__button-confirm").removeClass("disabled");');
+    driver.execute_script('$(".cmp-link-disclaimer__modal-footer > .cmp-modal__button-confirm.cmp-internal-link-disclaimer__modal-button").removeClass("disabled");');
     time.sleep(1)
 
     print('ZKLVTKER click <button> Agree')
     # ele.send_keys(Keys.RETURN)
-    driver.execute_script('$(".cmp-modal__button-confirm").click();');
+    driver.execute_script('$(".cmp-link-disclaimer__modal-footer > .cmp-modal__button-confirm.cmp-internal-link-disclaimer__modal-button").click();');
     time.sleep(1)
     print('EDSNQPTC click <button> Agree done')
 
